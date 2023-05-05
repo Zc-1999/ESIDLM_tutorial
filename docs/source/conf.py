@@ -1,7 +1,6 @@
 import os
 import sys
 from datetime import datetime
-import sphinx_theme
 
 # add system
 sys.path.insert(0, os.path.abspath('D:/project_esidlm_tutorial/esidlm/learner/'))
@@ -19,16 +18,16 @@ extensions = [
     "sphinx_copybutton",
     "sphinx_panels",
     "sphinx_design",
-    "sphinx_toggleprompt",
-    "sphinx.ext.autodoc",
-    "sphinx.ext.autosummary",
-    "sphinx.ext.coverage",
-    "sphinx.ext.doctest",
-    "sphinx.ext.extlinks",
-    "sphinx.ext.ifconfig",
-    "sphinx.ext.intersphinx",
-    'sphinxcontrib.images', 
-    'sphinx.ext.viewcode',
+    # "sphinx_toggleprompt",
+    # "sphinx.ext.autodoc",
+    # "sphinx.ext.autosummary",
+    # "sphinx.ext.coverage",
+    # "sphinx.ext.doctest",
+    # "sphinx.ext.extlinks",
+    # "sphinx.ext.ifconfig",
+    # "sphinx.ext.intersphinx",
+    # 'sphinxcontrib.images', 
+    # 'sphinx.ext.viewcode',
     "nbsphinx",
 ]
 

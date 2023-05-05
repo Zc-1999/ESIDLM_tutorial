@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html lang="en-US" >
+<html lang="en_US" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Installation &#8212; ESIDLM 0.1.0</title>
   
@@ -37,7 +37,6 @@
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinxcontrib-images\LightBox2\lightbox2\dist\css\lightbox.css" />
     <link rel="stylesheet" type="text/css" href="_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="_static/custom1.css" />
   
@@ -48,22 +47,18 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/toggleprompt.js"></script>
     <script src="_static/design-tabs.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="_static/sphinxcontrib-images\LightBox2\lightbox2\dist\js\lightbox-plus-jquery.min.js"></script>
-    <script src="_static/sphinxcontrib-images\LightBox2\lightbox2-customize\jquery-noconflict.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'installation';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Quickstart" href="quickstart.html" />
     <link rel="prev" title="Introduction" href="introduction.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en-US"/>
+  <meta name="docsearch:language" content="en_US"/>
   </head>
   
   
@@ -394,51 +389,52 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h1>
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h1>
 <p>All of our source codes are tested in python 3.9/3.10 for both Win10 /11 and Ubuntu 20.04. You can used git clone to capture our code or directly download the zip file from our GitHub project page. Here we show the two approaches respectively with vscode.</p>
 <section id="clone-the-code">
-<h2>1. Clone the code<a class="headerlink" href="#clone-the-code" title="Permalink to this heading">#</a></h2>
+<h2>1. Clone the code<a class="headerlink" href="#clone-the-code" title="Permalink to this headline">#</a></h2>
 <ul>
 <li><p><strong>Installation method 1</strong>
 Open the vscode and create a new folder, then you can clone the GitHub repository by the follow command:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/RegiusQuant/ESIDLM.git
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/RegiusQuant/ESIDLM.git
 </pre></div>
 </div>
-<p>![image](../images/sopinet-tutorial-1.png)</p>
+<figure class="align-center">
+<img alt="sopinet tutorial 1.png" src="_images/sopinet-tutorial-1.png" />
+</figure>
 </li>
 <li><p><strong>Installation method 2</strong>
 Download the zip file to your local at our project homepage (<a class="github reference external" href="https://github.com/RegiusQuant/ESIDLM">RegiusQuant/ESIDLM</a>) and unzip to the folder where you want.</p>
-<p>![image](../images/sopinet-tutorial-2.jpg)</p>
+<figure class="align-center">
+<img alt="sopinet tutorial 2.png" src="_images/sopinet-tutorial-2.jpg" />
+</figure>
 </li>
 </ul>
 </section>
 <section id="build-the-required-environment">
-<h2>2. Build the required environment<a class="headerlink" href="#build-the-required-environment" title="Permalink to this heading">#</a></h2>
+<h2>2. Build the required environment<a class="headerlink" href="#build-the-required-environment" title="Permalink to this headline">#</a></h2>
 <p>We have listed all of the required packages of our model in <em>environment.yaml</em> file. You can try to configure in your existing environment one by one or create a new environment automatically by conda (recommend). Here we showed the second approach in our guide.</p>
 <ul>
 <li><p><strong>Setting environment method 1</strong>
 Enter to the created folder firstly and used the follow code to build the required python packages (It is worth highlighting that you should have the conda software before). You can also set the name of your environment by replace <em>myenv</em>.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda env create -f environment.yaml --name myenv
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>environment.yaml<span class="w"> </span>--name<span class="w"> </span>myenv
 </pre></div>
 </div>
 </li>
 <li><p><strong>Setting environment method 2</strong>
 Additionally, Mamba-forge install are also recommend in our tutorials. It will helps to speed up installation and improve installation stability. You should used the follow command to install mamba.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda install mamba -n base -c conda-forge
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>mamba<span class="w"> </span>-n<span class="w"> </span>base<span class="w"> </span>-c<span class="w"> </span>conda-forge
 </pre></div>
 </div>
 <p>Then, the installation command is the same as conda, just replace conda with mamba, as shown below:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mamba env create -f environment.yaml --name myenv
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>environment.yaml<span class="w"> </span>--name<span class="w"> </span>myenv
 </pre></div>
 </div>
 </li>
 </ul>
 <p>When the environment is established well, you will see the following figure.</p>
-<figure class="align-center" id="id1">
+<figure class="align-center">
 <img alt="sopinet tutorial 3.png" src="_images/sopinet-tutorial-3.png" />
-<figcaption>
-<p><span class="caption-text">sopinet tutorial 3.png</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
-</figcaption>
 </figure>
 </section>
 </section>
@@ -527,7 +523,7 @@ Additionally, Mamba-forge install are also recommend in our tutorials. It will h
       
         <div class="footer-item">
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
     <br/>
   </p>
 </div>

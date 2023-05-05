@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html lang="en-US" >
+<html lang="en_US" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Quickstart &#8212; ESIDLM 0.1.0</title>
   
@@ -37,7 +37,6 @@
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinxcontrib-images\LightBox2\lightbox2\dist\css\lightbox.css" />
     <link rel="stylesheet" type="text/css" href="_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="_static/custom1.css" />
   
@@ -48,22 +47,18 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/toggleprompt.js"></script>
     <script src="_static/design-tabs.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="_static/sphinxcontrib-images\LightBox2\lightbox2\dist\js\lightbox-plus-jquery.min.js"></script>
-    <script src="_static/sphinxcontrib-images\LightBox2\lightbox2-customize\jquery-noconflict.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'quickstart';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="API reference" href="api.html" />
     <link rel="prev" title="Installation" href="installation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en-US"/>
+  <meta name="docsearch:language" content="en_US"/>
   </head>
   
   
@@ -394,19 +389,19 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="quickstart">
-<h1>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this heading">#</a></h1>
+<h1>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">#</a></h1>
 <p>Example Data Link: <a class="reference external" href="https://zenodo.org/record/7815394">https://zenodo.org/record/7815394</a></p>
 <section id="data-preprocessing">
-<h2>1. Data preprocessing<a class="headerlink" href="#data-preprocessing" title="Permalink to this heading">#</a></h2>
+<h2>1. Data preprocessing<a class="headerlink" href="#data-preprocessing" title="Permalink to this headline">#</a></h2>
 <p>The data used for SOPiNet have two parts. The first part is the labeled data for modeling and they should be in .csv format and be named after train.csv, valid.csv and test.csv for training, validation and testing data, respectively. The second part is the unlabeled data for retrieval PM2.5 and Ozone of full image, which can be any name in .csv format and usually named by its date The format in each .csv should be as follows. To make the structure of data clearer, we set the continuous variables start with X_* and * should be in the sequence of number. The categorical variables should start with C_* and * should also be in the sequence of number. For the labeled data, it should be contain both PM2.5 and Ozone in-situ measurement for training and we default it with Y_1 and Y_2. In addition, to utilize more training samples, we used mask columns to deal with the absence of observations at those sites. The main structure of data is as follow:</p>
 <img alt="sopinet-tutorial-4.png" class="align-center" src="_images/sopinet-tutorial-4.png" />
 </section>
 <section id="parameter-configuration">
-<h2>2. Parameter Configuration<a class="headerlink" href="#parameter-configuration" title="Permalink to this heading">#</a></h2>
+<h2>2. Parameter Configuration<a class="headerlink" href="#parameter-configuration" title="Permalink to this headline">#</a></h2>
 <p>After you finished the installation of the model, you will see the following main folder in the project(esidlm, examples, outputs). All of the codes are encapsulated in the esidlm folder and we do not recommend you change the code in this folder. In the examples folder, we uploaded a small part of train/valid/test data and the “SOPiNet.ipynb” file in this folder is showed how to used esidlm module as an instance. You only need to change some simple parameter configurations and run each cells in the jupyter notebook by order to get your own model. To simplify use, we have consolidated all configurations into a dictionary variable <code class="docutils literal notranslate"><span class="pre">SOPINET_TRAINING_</span> <span class="pre">CONFIG</span></code>. We will briefly explain what you need to modified in your local in API.</p>
 </section>
 <section id="training-the-model">
-<h2>3. Training the model<a class="headerlink" href="#training-the-model" title="Permalink to this heading">#</a></h2>
+<h2>3. Training the model<a class="headerlink" href="#training-the-model" title="Permalink to this headline">#</a></h2>
 <p>Here, we showed a complete training process using example train data. First, open the ESIDLM project and change the system path by sys (first code cell), then set your own data path and optimized parameter. After setting the parameters well, you can create a <code class="docutils literal notranslate"><span class="pre">SOPiNetLearner</span></code> object and call <code class="docutils literal notranslate"><span class="pre">run_model_training</span></code> function.</p>
 <img alt="sopinet-tutorial-5.png" src="_images/sopinet-tutorial-5.png" />
 <p>In this instance, we set the parameter with “batch_size”: 64, “d_embed”: 32,”d_model”: 128,”n_layers”: 1,”n_head”: 4,”p_drop”: 0.1. As you can see, just after 20 epoch of training (2 minute), we have achieved remarkable accuracy with 0.59 R2 of PM2.5 (Y_1) and 0.61 R2 of ozone (Y_2). Now, a full round of training model is finished, the rest need to constantly adjust the parameter and optimize the model.</p>
@@ -414,7 +409,7 @@ document.write(`
 <p>It should be emphasized that both each training of the model and Hyperparameter file are saved in the output folder (default=’ /.. /outputs/sopinet’).</p>
 </section>
 <section id="using-model-inference">
-<h2>4. Using model Inference<a class="headerlink" href="#using-model-inference" title="Permalink to this heading">#</a></h2>
+<h2>4. Using model Inference<a class="headerlink" href="#using-model-inference" title="Permalink to this headline">#</a></h2>
 <p>After determining the best optimal model, we will use this model for inference. It is also should used the dictionary named <cite>SOPINET_ INFERENCE_CONFIG</cite> to which is mostly similar to the training model. As follow, you should set the input and output folder in which the input data should be unlabeled. Then set the optimal model path and run the inference function.</p>
 <img alt="sopinet-tutorial-7.jpg" src="_images/sopinet-tutorial-7.jpg" />
 </section>
@@ -506,7 +501,7 @@ document.write(`
       
         <div class="footer-item">
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
     <br/>
   </p>
 </div>

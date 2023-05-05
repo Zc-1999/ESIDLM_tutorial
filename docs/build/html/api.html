@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html lang="en-US" >
+<html lang="en_US" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>API reference &#8212; ESIDLM 0.1.0</title>
   
@@ -37,7 +37,6 @@
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinxcontrib-images\LightBox2\lightbox2\dist\css\lightbox.css" />
     <link rel="stylesheet" type="text/css" href="_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="_static/custom1.css" />
   
@@ -48,22 +47,18 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/toggleprompt.js"></script>
     <script src="_static/design-tabs.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="_static/sphinxcontrib-images\LightBox2\lightbox2\dist\js\lightbox-plus-jquery.min.js"></script>
-    <script src="_static/sphinxcontrib-images\LightBox2\lightbox2-customize\jquery-noconflict.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'api';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Publications" href="publications.html" />
     <link rel="prev" title="Quickstart" href="quickstart.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en-US"/>
+  <meta name="docsearch:language" content="en_US"/>
   </head>
   
   
@@ -394,22 +389,23 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="api-reference">
-<h1>API reference<a class="headerlink" href="#api-reference" title="Permalink to this heading">#</a></h1>
+<h1>API reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">#</a></h1>
 <section id="parameter-configuration">
-<h2>Parameter Configuration<a class="headerlink" href="#parameter-configuration" title="Permalink to this heading">#</a></h2>
+<h2>Parameter Configuration<a class="headerlink" href="#parameter-configuration" title="Permalink to this headline">#</a></h2>
 <p>After you finished the installation of the model, you will see the following main folder in the project(esidlm, examples, outputs). All of the codes are encapsulated in the esidlm folder and we do not recommend you change the code in this folder.</p>
 <p>In the examples folder, we uploaded a small part of train/valid/test data and the “SOPiNet.ipynb” file in this folder is showed how to used esidlm module as an instance. You only need to change some simple parameter configurations and run each cells in the jupyter notebook by order to get your own model. To simplify use, we have consolidated all configurations into a dictionary variable <cite>SOPINET_TRAINING_CONFIG</cite>. Then we will briefly explain what you need to modified in your local.</p>
+</section>
 <section id="basic-parameter-configuration">
-<h3>Basic Parameter Configuration<a class="headerlink" href="#basic-parameter-configuration" title="Permalink to this heading">#</a></h3>
+<h2>Basic Parameter Configuration<a class="headerlink" href="#basic-parameter-configuration" title="Permalink to this headline">#</a></h2>
 <section id="global">
-<h4>Global<a class="headerlink" href="#global" title="Permalink to this heading">#</a></h4>
+<h3>Global<a class="headerlink" href="#global" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p><strong>seed:</strong> the random seed in model. (default=42).</p></li>
 <li><p><strong>output_folder:</strong> This parameter control output path of the model after training, we default it to “../outputs/sopinet”</p></li>
 </ul>
 </section>
 <section id="data">
-<h4>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h4>
+<h3>Data<a class="headerlink" href="#data" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p><strong>train_data:</strong> the file path of your train data. (default=’ ../data/sopinet/train.csv’)</p></li>
 <li><p><strong>valid_data:</strong> the file path of your valid data. (default=’ ../data/sopinet/valid.csv’)</p></li>
@@ -417,32 +413,22 @@ document.write(`
 <li><p><strong>cont_cols:</strong> the columns name of continuous variable in the train data. In our study, we default it to “X_1, X_2 ‧‧‧‧‧‧X_n” but it can be flexible.</p></li>
 <li><p><strong>cate_cols:</strong> the columns name of categorical variable in the train data. In our study, we default it to “C_1, C_2 ‧‧‧‧‧‧C_n” but it can be flexible.</p></li>
 <li><p><strong>time_cols:</strong> the columns of time series variable in the train data. Compare to cont_cols, we processed them into transformer frame. Noticed that each different time period in the time series needs to be in the list independently. For example, If you have three days of time series data of meteorological data (RH,WS,PS). The time_cols should be the format as follow:</p></li>
-</ul>
-<p><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a>python
-time_cols = {</p>
-<blockquote>
-<div><p>[RH_1, WS_1, PS_1],
-[RH_2, WS_2, PS_2],
-[RH_3, WS_3, PS_3],</p>
-</div></blockquote>
-<p>}```</p>
-<ul class="simple">
 <li><p><strong>target_cols:</strong> the columns name of prediction in train data. Due to the ability of simultaneous inversion, it should be set two predictions name. In our study, we default it to “Y_1, Y_2” but it also can be flexible.</p></li>
 <li><p><strong>mask_cols:</strong> the columns name of you want to masked in targets value. The masked value will not participate in the calculation of the loss function. In our study, we masked the in-situ measurement which are missing. Note that code used 0 or 1 to determine whether the value mask or not.(1 = keep, 0 = mask) and the order should be same with target_cols.</p></li>
 </ul>
 </section>
 </section>
 <section id="hyperparameter-configuration">
-<h3>Hyperparameter configuration<a class="headerlink" href="#hyperparameter-configuration" title="Permalink to this heading">#</a></h3>
+<h2>Hyperparameter configuration<a class="headerlink" href="#hyperparameter-configuration" title="Permalink to this headline">#</a></h2>
 <section id="dataloader">
-<h4>Dataloader<a class="headerlink" href="#dataloader" title="Permalink to this heading">#</a></h4>
+<h3>Dataloader<a class="headerlink" href="#dataloader" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p><cite>batch_size</cite>: The number of data samples captured in one step training. (default=64)</p></li>
 <li><p><cite>num_workers</cite>: The number of process created when used dataloader. (default=4)</p></li>
 </ul>
 </section>
 <section id="model">
-<h4>Model<a class="headerlink" href="#model" title="Permalink to this heading">#</a></h4>
+<h3>Model<a class="headerlink" href="#model" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p><strong>d_embed</strong>: The number of dimensions used to represent each input feature in the embedding for categorical. (default=32)</p></li>
 <li><p><strong>d_model</strong>: The number of hidden layer nodes. (default=256)</p></li>
@@ -455,7 +441,7 @@ time_cols = {</p>
 </ul>
 </section>
 <section id="model-callback">
-<h4>Model_Callback<a class="headerlink" href="#model-callback" title="Permalink to this heading">#</a></h4>
+<h3>Model_Callback<a class="headerlink" href="#model-callback" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p><strong>save_top_k</strong>: Specifies the number of best models to keep based on a given metric during training on validation accuracy. (default=1, save the best)</p></li>
 <li><p><strong>monitor</strong>: Specifies the metric to monitor during training. (default=valid_loss)</p></li>
@@ -465,14 +451,13 @@ time_cols = {</p>
 </ul>
 </section>
 <section id="trainer">
-<h4>Trainer<a class="headerlink" href="#trainer" title="Permalink to this heading">#</a></h4>
+<h3>Trainer<a class="headerlink" href="#trainer" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p><strong>max_epochs</strong>: Specifies the maximum number of epochs to train for. (default=5)</p></li>
 <li><p><strong>accelerator</strong>: Specifies the hardware accelerator to use during training. (default=”gpu”)</p></li>
 <li><p><strong>devices</strong>: Specifies the number of devices to use during training. (default=1)</p></li>
 <li><p><strong>deterministic</strong>: Ensures reproducibility of the training results. (default=True)</p></li>
 </ul>
-</section>
 </section>
 </section>
 </section>
@@ -524,19 +509,17 @@ time_cols = {</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parameter-configuration">Parameter Configuration</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-parameter-configuration">Basic Parameter Configuration</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#global">Global</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parameter-configuration">Parameter Configuration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-parameter-configuration">Basic Parameter Configuration</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#global">Global</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hyperparameter-configuration">Hyperparameter configuration</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dataloader">Dataloader</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#model">Model</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#model-callback">Model_Callback</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#trainer">Trainer</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hyperparameter-configuration">Hyperparameter configuration</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataloader">Dataloader</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model">Model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-callback">Model_Callback</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trainer">Trainer</a></li>
 </ul>
 </li>
 </ul>
@@ -574,7 +557,7 @@ time_cols = {</p>
       
         <div class="footer-item">
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
     <br/>
   </p>
 </div>

@@ -14,12 +14,16 @@ All of our source codes are tested in python 3.9/3.10 for both Win10 /11 and Ubu
 
       git clone https://github.com/RegiusQuant/ESIDLM.git
 
-  ![image](../images/sopinet-tutorial-1.png)
+  .. figure:: ../images/sopinet-tutorial-1.png
+    :alt: sopinet tutorial 1.png
+    :align: center
 
 - **Installation method 2**  
   Download the zip file to your local at our project homepage (`https://github.com/RegiusQuant/ESIDLM <https://github.com/RegiusQuant/ESIDLM>`_) and unzip to the folder where you want.
 
-  ![image](../images/sopinet-tutorial-2.jpg)
+  .. figure:: ../images/sopinet-tutorial-2.jpg
+    :alt: sopinet tutorial 2.png
+    :align: center
 
 2. Build the required environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -52,4 +56,3 @@ When the environment is established well, you will see the following figure.
    :alt: sopinet tutorial 3.png
    :align: center
 
-   sopinet tutorial 3.png
