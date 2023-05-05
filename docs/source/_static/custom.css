@@ -1,0 +1,80 @@
+/*颜色设置*/
+:root {
+  --pst-color-primary: #0050A2 !important;
+  --pst-color-info: #0050A2 !important;
+}
+
+a {
+  color: #0050A2 !important;
+}
+
+a:hover {
+  color: #0050A2 !important;
+}
+
+/*调整左右留白*/
+.container {
+  max-width: 100%;
+}
+
+.bd-content {
+  max-width: 170%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* image大小 */
+.panel-image {
+  width: 80px; 
+  height: 80px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.custom-col {
+  flex: 1;
+  min-width: 0;
+}
+
+/* 针对card区域 */
+.intro-card {
+  padding: 10px 10px 10px 10px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intro-card:hover {
+  transform: translateY(-20px);
+  transition: 0.3s;
+}
+
+.intro-card-description {
+  font-size: 10px; 
+  padding: 2px 2px;
+}
+
+.intro-card .btn-secondary {
+  background-color: white !important;
+  border-color: #0050A2 !important;
+  border-width: 2px;
+  color: #0050A2 !important;
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 8px 8px;
+}
+
+
+.intro-card .btn-secondary:hover {
+  background-color: #0050A2 !important;
+  border-color: #0050A2 !important;
+  color: white !important;
+}
+
