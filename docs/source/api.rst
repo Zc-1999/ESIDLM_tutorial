@@ -33,8 +33,7 @@ time_cols = {
    [RH_1, WS_1, PS_1],
    [RH_2, WS_2, PS_2],
    [RH_3, WS_3, PS_3],
-} 
-```
+}```
 
 - **target_cols:** the columns name of prediction in train data. Due to the ability of simultaneous inversion, it should be set two predictions name. In our study, we default it to “Y_1, Y_2” but it also can be flexible.
 - **mask_cols:** the columns name of you want to masked in targets value. The masked value will not participate in the calculation of the loss function. In our study, we masked the in-situ measurement which are missing. Note that code used 0 or 1 to determine whether the value mask or not.(1 = keep, 0 = mask) and the order should be same with target_cols.
