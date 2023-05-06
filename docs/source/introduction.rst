@@ -2,28 +2,29 @@
 Introduction
 ============
 
-ESIDLM (Enhanced Spatial-Temporal Interpretable Deep Learning Model) is a Python package developed and maintained by Dr. Yan Xing's team at Beijing Normal University `(Home Page) <https://gcess.bnu.edu.cn/yjspy/dsjj/157170.html>`_. At present, we have integrated a variety of advanced deep learning models. If you have any questions, please contact yanxing@bnu.edu.cn.
+ESIDLM (Enhanced Spatial-Temporal Interpretable Deep Learning Model) is a Python package developed and maintained by Dr. Yan Xing's team at Beijing Normal University `(Home Page) <https://gcess.bnu.edu.cn/yjspy/dsjj/157170.html>`_. Currently, ESIDLM has integrated a variety of advanced deep learning models, as follows. If you have any questions, please contact yanxing@bnu.edu.cn.
 
 EntityDenseNet
 --------------
 
-EntityDenseNet is a DNN-based deep learning model with interpretability by combining embedding and UMAP (uniform manifold approximation and projection) techniques.
+EntityDenseNet is a deep learning model based on deep neural networks (DNN) that enhances interpretability by combining embedding techniques and UMAP (Uniform Manifold Approximation and Projection).
 
 .. image:: ../images/deepdense.png
    :alt: deepdense
+   :scale: 80%
 
 SIDLMNet
 --------
 
-SIDLMNet is a new Spatial-Temporal Interpretable Deep Learning Model (SIDLM) which incorporates the idea of combining linear(Wide)and non-linear(Deep) models and uses a joint training approach to model the data to improve the interpretability and predictive accuracy.
+SIDLMNet, a novel Spatial-Temporal Interpretable Deep Learning Model (SIDLM), integrates both linear (Wide) and non-linear (Deep) models while employing a joint training approach to enhance interpretability and predictive accuracy.
 
 .. image:: ../images/widedeep.jpg
    :alt: widedeep
 
 SOPINet
---------
+-------
 
-SOPINet is an improved multi-tasking model using DNN-based model and Transformer architecture, with the ability to simultaneous retrieval PM2.5 and Ozone.
+SOPINet is an advanced multi-tasking model that leverages DNN-based models and Transformer architecture, capable of simultaneously retrieving PM2.5 and Ozone levels.
 
 .. image:: ../images/sopi.jpg
    :alt: sopi

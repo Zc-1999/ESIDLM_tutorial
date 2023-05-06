@@ -2,13 +2,14 @@
 Installation
 ============
 
-All of our source codes are tested in python 3.9/3.10 for both Win10 /11 and Ubuntu 20.04. You can used git clone to capture our code or directly download the zip file from our GitHub project page. Here we show the two approaches respectively with vscode.
+All of our source code has been tested with Python 3.9/3.10 on both Windows 10/11 and Ubuntu 20.04. You can either use 'git clone' to obtain our code or directly download the zip file from our GitHub project page. Here, we demonstrate both approaches using Visual Studio Code (VSCode).
 
-1. Clone the code
-~~~~~~~~~~~~~~~~~~
+Clone the code
+--------------
 
-- **Installation method 1**  
-  Open the vscode and create a new folder, then you can clone the GitHub repository by the follow command:
+- **Installation method 1**
+  
+  Open Visual Studio Code (VSCode) and create a new folder. To clone the GitHub repository, use the following command:
 
   .. code-block:: bash
 
@@ -18,39 +19,40 @@ All of our source codes are tested in python 3.9/3.10 for both Win10 /11 and Ubu
     :alt: sopinet tutorial 1.png
     :align: center
 
-- **Installation method 2**  
+- **Installation method 2**
+
   Download the zip file to your local at our project homepage (`https://github.com/RegiusQuant/ESIDLM <https://github.com/RegiusQuant/ESIDLM>`_) and unzip to the folder where you want.
 
   .. figure:: ../images/sopinet-tutorial-2.jpg
     :alt: sopinet tutorial 2.png
     :align: center
 
-2. Build the required environment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Build the required environment
+------------------------------
 
-We have listed all of the required packages of our model in *environment.yaml* file. You can try to configure in your existing environment one by one or create a new environment automatically by conda (recommend). Here we showed the second approach in our guide.
+We have listed all the required packages for our model in the *environment.yml* file. You can either configure them one by one in your existing environment or create a new environment automatically using conda (recommended). In this guide, we demonstrate the latter approach.
 
 - **Setting environment method 1**  
-  Enter to the created folder firstly and used the follow code to build the required python packages (It is worth highlighting that you should have the conda software before). You can also set the name of your environment by replace *myenv*.
+  First, navigate to the created folder and use the following code to build the required Python packages (please note that you should have conda software installed beforehand). You can also customize the name of your environment by replacing *myenv* with your desired name.
 
   .. code-block:: bash
 
       conda env create -f environment.yaml --name myenv
 
 - **Setting environment method 2**  
-  Additionally, Mamba-forge install are also recommend in our tutorials. It will helps to speed up installation and improve installation stability. You should used the follow command to install mamba.
+  Additionally, we recommend using Mamba-forge in our tutorials. It helps to speed up the installation process and improve installation stability. To install Mamba, use the following command:
 
   .. code-block:: bash
 
       conda install mamba -n base -c conda-forge
 
-  Then, the installation command is the same as conda, just replace conda with mamba, as shown below:
+  Next, the installation command is the same as for conda; simply replace 'conda' with 'mamba', as illustrated below:
 
   .. code-block:: bash
 
       mamba env create -f environment.yaml --name myenv
 
-When the environment is established well, you will see the following figure.
+When the environment is established successfully, you will see the following figure.
 
 .. figure:: ../images/sopinet-tutorial-3.png
    :alt: sopinet tutorial 3.png

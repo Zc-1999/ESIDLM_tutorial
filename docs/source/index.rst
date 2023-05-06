@@ -41,7 +41,7 @@ ESIDLM: Enhanced Spatial-Temporal Interpretable Deep Learning Model
 
    .. rst-class:: intro-card-description
 
-   Get an overview of ESDLM, its purpose.Start your journey here
+   Get an overview of ESDLM and its purpose.Start your journey here
 
    +++
    .. link-button:: introduction

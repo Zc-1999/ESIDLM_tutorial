@@ -390,12 +390,12 @@ document.write(`
                   
   <section id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h1>
-<p>All of our source codes are tested in python 3.9/3.10 for both Win10 /11 and Ubuntu 20.04. You can used git clone to capture our code or directly download the zip file from our GitHub project page. Here we show the two approaches respectively with vscode.</p>
+<p>All of our source code has been tested with Python 3.9/3.10 on both Windows 10/11 and Ubuntu 20.04. You can either use ‘git clone’ to obtain our code or directly download the zip file from our GitHub project page. Here, we demonstrate both approaches using Visual Studio Code (VSCode).</p>
 <section id="clone-the-code">
-<h2>1. Clone the code<a class="headerlink" href="#clone-the-code" title="Permalink to this headline">#</a></h2>
+<h2>Clone the code<a class="headerlink" href="#clone-the-code" title="Permalink to this headline">#</a></h2>
 <ul>
-<li><p><strong>Installation method 1</strong>
-Open the vscode and create a new folder, then you can clone the GitHub repository by the follow command:</p>
+<li><p><strong>Installation method 1</strong></p>
+<p>Open Visual Studio Code (VSCode) and create a new folder. To clone the GitHub repository, use the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/RegiusQuant/ESIDLM.git
 </pre></div>
 </div>
@@ -403,8 +403,8 @@ Open the vscode and create a new folder, then you can clone the GitHub repositor
 <img alt="sopinet tutorial 1.png" src="_images/sopinet-tutorial-1.png" />
 </figure>
 </li>
-<li><p><strong>Installation method 2</strong>
-Download the zip file to your local at our project homepage (<a class="github reference external" href="https://github.com/RegiusQuant/ESIDLM">RegiusQuant/ESIDLM</a>) and unzip to the folder where you want.</p>
+<li><p><strong>Installation method 2</strong></p>
+<p>Download the zip file to your local at our project homepage (<a class="github reference external" href="https://github.com/RegiusQuant/ESIDLM">RegiusQuant/ESIDLM</a>) and unzip to the folder where you want.</p>
 <figure class="align-center">
 <img alt="sopinet tutorial 2.png" src="_images/sopinet-tutorial-2.jpg" />
 </figure>
@@ -412,27 +412,27 @@ Download the zip file to your local at our project homepage (<a class="github re
 </ul>
 </section>
 <section id="build-the-required-environment">
-<h2>2. Build the required environment<a class="headerlink" href="#build-the-required-environment" title="Permalink to this headline">#</a></h2>
-<p>We have listed all of the required packages of our model in <em>environment.yaml</em> file. You can try to configure in your existing environment one by one or create a new environment automatically by conda (recommend). Here we showed the second approach in our guide.</p>
+<h2>Build the required environment<a class="headerlink" href="#build-the-required-environment" title="Permalink to this headline">#</a></h2>
+<p>We have listed all the required packages for our model in the <em>environment.yml</em> file. You can either configure them one by one in your existing environment or create a new environment automatically using conda (recommended). In this guide, we demonstrate the latter approach.</p>
 <ul>
 <li><p><strong>Setting environment method 1</strong>
-Enter to the created folder firstly and used the follow code to build the required python packages (It is worth highlighting that you should have the conda software before). You can also set the name of your environment by replace <em>myenv</em>.</p>
+First, navigate to the created folder and use the following code to build the required Python packages (please note that you should have conda software installed beforehand). You can also customize the name of your environment by replacing <em>myenv</em> with your desired name.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>environment.yaml<span class="w"> </span>--name<span class="w"> </span>myenv
 </pre></div>
 </div>
 </li>
 <li><p><strong>Setting environment method 2</strong>
-Additionally, Mamba-forge install are also recommend in our tutorials. It will helps to speed up installation and improve installation stability. You should used the follow command to install mamba.</p>
+Additionally, we recommend using Mamba-forge in our tutorials. It helps to speed up the installation process and improve installation stability. To install Mamba, use the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>mamba<span class="w"> </span>-n<span class="w"> </span>base<span class="w"> </span>-c<span class="w"> </span>conda-forge
 </pre></div>
 </div>
-<p>Then, the installation command is the same as conda, just replace conda with mamba, as shown below:</p>
+<p>Next, the installation command is the same as for conda; simply replace ‘conda’ with ‘mamba’, as illustrated below:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>environment.yaml<span class="w"> </span>--name<span class="w"> </span>myenv
 </pre></div>
 </div>
 </li>
 </ul>
-<p>When the environment is established well, you will see the following figure.</p>
+<p>When the environment is established successfully, you will see the following figure.</p>
 <figure class="align-center">
 <img alt="sopinet tutorial 3.png" src="_images/sopinet-tutorial-3.png" />
 </figure>
@@ -486,8 +486,8 @@ Additionally, Mamba-forge install are also recommend in our tutorials. It will h
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clone-the-code">1. Clone the code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-the-required-environment">2. Build the required environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clone-the-code">Clone the code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-the-required-environment">Build the required environment</a></li>
 </ul>
   </nav></div>
 
