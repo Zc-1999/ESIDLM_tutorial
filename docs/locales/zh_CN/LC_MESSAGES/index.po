@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the ESIDLM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ESIDLM \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-08 13:49+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: 7d3988b3c7df4ee791f91c17d6a9fe53
+msgid "bnulogo"
+msgstr ""
+
+#: ../../source/index.rst:17 19fbaf2f2f644ac78ceb971f632ed93a
+msgid "ESIDLM: Enhanced Spatial-Temporal Interpretable Deep Learning Model"
+msgstr "ESIDLM: 增强型时空可解释深度学习模型"
+
+#: ../../source/index.rst:44 36220469a2934dc3b70f6f35f8605414
+msgid "Get an overview of ESDLM and its purpose.Start your journey here"
+msgstr "快速了解ESIDLM库及其用途，开始您的旅程"
+
+#: ../../source/index.rst:58 5a39bbf4b2784957939cd088fdbadc48
+msgid "Learn how to install and set up ESDLM on your system"
+msgstr "学习如何安装部署ESIDLM库到本地"
+
+#: ../../source/index.rst:72 116b1b87d732427aa087ff4f11fb41b4
+msgid "Jump right in and get hands-on experience with ESDLM"
+msgstr "一个例子带你亲自上手实践ESIDLM"
+
+#: ../../source/index.rst:86 5fd2c8b5b7d8419e92f0050250511675
+msgid "Explore the comprehensive API documentation"
+msgstr "探索完整的API接口文档"
+
+#: ../../source/index.rst:100 5cd2bd6b53d34e328129aa09225666b5
+msgid "Discover research papers and other resources related to ESDLM"
+msgstr "已使用ESIDLM库出版的论文和产品"
+

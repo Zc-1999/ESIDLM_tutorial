@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the ESIDLM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ESIDLM \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-08 13:49+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/publications.rst:3 e9ceea41e4d94b50981c94f8f66a2431
+msgid "Publications"
+msgstr "出版"
+
+#: ../../source/publications.rst:6 cba124a648fa4a9dafacbc29508f6191
+msgid "Paper"
+msgstr "SCI文章"
+
+#: ../../source/publications.rst:8 8598a9caea994c29a9f2b88ef4cb5e41
+msgid "SOPINet"
+msgstr "SOPINet"
+
+#: ../../source/publications.rst:10 0fd2efabbb374f1197e8453103f69579
+msgid ""
+"`Xing Yan, Chen Zuo et al(2023).Cooperative simultaneous inversion of "
+"satellite-based real-time PM2.5 and ozone levels using an improved deep "
+"learning model with attention mechanism "
+"<https://www.sciencedirect.com/science/article/pii/S0269749123005110>`_"
+msgstr "`Xing Yan, Chen Zuo et al(2023).Cooperative simultaneous inversion of "
+"satellite-based real-time PM2.5 and ozone levels using an improved deep "
+"learning model with attention mechanism "
+"<https://www.sciencedirect.com/science/article/pii/S0269749123005110>`_"
+
+#: ../../source/publications.rst:12 e779607cf68640f2a3ffd81eee7391d1
+msgid "SIDLMNet"
+msgstr "SIDLMNet"
+
+#: ../../source/publications.rst:14 8ca7856f296d4c6a8fa7686f63d4ec14
+msgid ""
+"`Xing Yan*, Zhou Zang et al(2021). A Spatial-Temporal Interpretable Deep "
+"Learning Model for improving interpretability and predictive accuracy of "
+"satellite-based PM2.5 "
+"<https://www.sciencedirect.com/science/article/abs/pii/S0269749121000373>`_"
+msgstr ""
+"`Xing Yan*, Zhou Zang et al(2021). A Spatial-Temporal Interpretable Deep "
+"Learning Model for improving interpretability and predictive accuracy of "
+"satellite-based PM2.5 "
+"<https://www.sciencedirect.com/science/article/abs/pii/S0269749121000373>`_"
+
+#: ../../source/publications.rst:15 b2f0e1334fea4c3cbb9b769d1095b5b6
+msgid ""
+"`Zhou Zang, Xing Yan* et al(2021). Tree-based ensemble deep learning "
+"model for spatiotemporal surface ozone(O3) prediction and interpretation "
+"<https://www.sciencedirect.com/science/article/pii/S0303243421002233>`_"
+msgstr ""
+"`Zhou Zang, Xing Yan* et al(2021). Tree-based ensemble deep learning "
+"model for spatiotemporal surface ozone(O3) prediction and interpretation "
+"<https://www.sciencedirect.com/science/article/pii/S0303243421002233>`_"
+
+#: ../../source/publications.rst:17 558d0d1a70e54d059872c237e035978d
+msgid "EntityDenseNet"
+msgstr "EntityDenseNet"
+
+#: ../../source/publications.rst:19 95c3c2e73f254995ba1153c5d6a218f9
+msgid ""
+"`Xing Yan, Zhou Zang, Zhanqing Li* et al(2020). New Interpretable Deep "
+"Learning Model to Monitor Real-Time PM2.5 Concentrations from Satellite "
+"Data "
+"<https://www.sciencedirect.com/science/article/pii/S0160412020320158>`_"
+msgstr ""
+
+#: ../../source/publications.rst:21 b307ba1e2c744b76bf445101acbade9c
+msgid "Other DL models"
+msgstr "其他深度学习模型"
+
+#: ../../source/publications.rst:23 77dc0f18655d4b85a0b2ed2aedf86de8
+msgid ""
+"`Xing Yan*, Zhou Zang et al(2022) A global land aerosol fine-mode "
+"fraction dataset (2001-2020) retrieved from MODIS using hybrid physical "
+"and deep learning approaches "
+"<https://essd.copernicus.org/articles/14/1193/2022/>`_"
+msgstr ""
+"`Xing Yan*, Zhou Zang et al(2022) A global land aerosol fine-mode "
+"fraction dataset (2001-2020) retrieved from MODIS using hybrid physical "
+"and deep learning approaches "
+"<https://essd.copernicus.org/articles/14/1193/2022/>`_"
+
+#: ../../source/publications.rst:26 806431297188492c86d1b5fa0141afd0
+msgid "Product"
+msgstr "遥感产品"
+
+#: ../../source/publications.rst:28 528da5bdd2314184ae10152f6e63fc9c
+msgid ""
+"`2000-2020 FAOD product "
+"<https://essd.copernicus.org/articles/14/1193/2022/>`_"
+msgstr ""
+"`2000-2020 FAOD product "
+"<https://essd.copernicus.org/articles/14/1193/2022/>`_"

@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the ESIDLM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ESIDLM \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-08 13:49+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/introduction.rst:3 ddefdcf435904bdfa7b69da219762ee7
+msgid "Introduction"
+msgstr "介绍"
+
+#: ../../source/introduction.rst:5 8c4a8c4ed73d4219abca125d55923280
+msgid ""
+"ESIDLM (Enhanced Spatial-Temporal Interpretable Deep Learning Model) is a"
+" Python package developed and maintained by Dr. Yan Xing's team at "
+"Beijing Normal University `(Home Page) "
+"<https://gcess.bnu.edu.cn/yjspy/dsjj/157170.html>`_. Currently, ESIDLM "
+"has integrated a variety of advanced deep learning models, as follows. If"
+" you have any questions, please contact yanxing@bnu.edu.cn."
+msgstr "ESIDLM（增强型时空可解释深度学习模型）是由北京师范大学晏星教授团队开发和维护的Python包"
+"（团队主页 <https://gcess.bnu.edu.cn/yjspy/dsjj/157170.html>`_）。"
+"目前，ESIDLM已经集成了多种成熟的深度学习模型，具体模型如下所示。如有任何疑问，可以联系我们。"
+"邮箱:yanxing@bnu.edu.cn."
+
+#: ../../source/introduction.rst:8 6280c59823254f5aa6ca743a8118379e
+msgid "EntityDenseNet"
+msgstr "EntityDenseNet"
+
+#: ../../source/introduction.rst:10 0efe44a583f344c19c0c1b7d1893c2c6
+msgid ""
+"EntityDenseNet is a deep learning model based on deep neural networks "
+"(DNN) that enhances interpretability by combining embedding techniques "
+"and UMAP (Uniform Manifold Approximation and Projection)."
+msgstr "EntityDenseNet是一种基于深度神经网络（DNN）构建的深度学习模型,"
+"该模型通过引入嵌入层(embedding)和UMAP(uniform manifold approximation and projectio)投影技术,"
+"实现了变量之间的可解释能力。"
+
+#: 0f8a04965d3b43cd8728538d1f2721c4
+msgid "deepdense"
+msgstr "deepdense"
+
+#: ../../source/introduction.rst:17 3775a22633e449209921e5095feb5446
+msgid "SIDLMNet"
+msgstr "SIDLMNet"
+
+#: ../../source/introduction.rst:19 8f038a3d3af54ab69f3712892a8d298e
+msgid ""
+"SIDLMNet, a novel Spatial-Temporal Interpretable Deep Learning Model "
+"(SIDLM), integrates both linear (Wide) and non-linear (Deep) models while"
+" employing a joint training approach to enhance interpretability and "
+"predictive accuracy."
+msgstr "SIDLMNet是一种新颖的时空可解释深度学习模型,该模型采用了线性模型和非线性模型相结合的思想,"
+"采用联合训练的方法同时增强了模型的可解释性和准确预测的能力。"
+
+#: 873074c46c544a308e05fcbc543b8e06
+msgid "widedeep"
+msgstr "widedeep"
+
+#: ../../source/introduction.rst:25 27f0291dd90b4dfc9039de98173f0b76
+msgid "SOPINet"
+msgstr "SOPINet"
+
+#: ../../source/introduction.rst:27 485d23929a7c4950b45715aad070fadf
+msgid ""
+"SOPINet is an advanced multi-tasking model that leverages DNN-based "
+"models and Transformer architecture, capable of simultaneously retrieving"
+" PM2.5 and Ozone levels."
+msgstr "SOPI Net是一种新颖的深度学习模型，该模型采用了深度神经网络(DNN)和Transformer架构，利用多头注意力机制,"
+"根据实时的卫星观测和历史时间序列的气象，观测数据进行PM2.5和O3的联合反演。"
+
+#: 9d31d974c5e843508709ae915cc6d0f1
+msgid "sopi"
+msgstr "sopi"
+

@@ -52,6 +52,9 @@ source_suffix = {
 templates_path = ['_templates']
 
 language = 'en_US'
+locale_dirs = ['../locales/']  
+gettext_compact = False 
+gettext_uuid = True 
 
 exclude_patterns = []
 

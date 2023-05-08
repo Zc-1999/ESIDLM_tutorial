@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the ESIDLM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ESIDLM \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-08 13:49+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/api.rst:3 d66c9f4d2c624a83a7895eb58ecc5c1e
+msgid "API reference"
+msgstr "API接口参考"
+
+#: ../../source/api.rst:6 a6d2524eb32440138ff15a6db8ce2062
+msgid "Parameter Configuration"
+msgstr "参数配置"
+
+#: ../../source/api.rst:8 8e52d8210df041beb495dc9a62913a4f
+msgid ""
+"After you finished the installation of the model, you will see the "
+"following main folder in the project(esidlm, examples, outputs). All of "
+"the codes are encapsulated in the esidlm folder and we do not recommend "
+"you change the code in this folder."
+msgstr ""
+
+#: ../../source/api.rst:10 6082eabb79be4170bdecf80165ee5013
+msgid ""
+"In the examples folder, we uploaded a small part of train/valid/test data"
+" and the “SOPiNet.ipynb” file in this folder is showed how to used esidlm"
+" module as an instance. You only need to change some simple parameter "
+"configurations and run each cells in the jupyter notebook by order to get"
+" your own model. To simplify use, we have consolidated all configurations"
+" into a dictionary variable `SOPINET_TRAINING_CONFIG`. Then we will "
+"briefly explain what you need to modified in your local."
+msgstr ""
+
+#: ../../source/api.rst:13 0aa810cfe815436e842f6b45dc6a024b
+msgid "Basic Parameter Configuration"
+msgstr ""
+
+#: ../../source/api.rst:16 1c3e3e5ece8747d5b20701c298c4597c
+msgid "Global"
+msgstr ""
+
+#: ../../source/api.rst:18 0d07bb8b51fd49efb6e8829eb5169ebc
+msgid "**seed:** the random seed in model. (default=42)."
+msgstr ""
+
+#: ../../source/api.rst:19 1333fdc9675a4fdc85cb589dfc757726
+msgid ""
+"**output_folder:** This parameter control output path of the model after "
+"training, we default it to \"../outputs/sopinet\""
+msgstr ""
+
+#: ../../source/api.rst:22 0b4e17fce00d414aa0c625ad56be8550
+msgid "Data"
+msgstr ""
+
+#: ../../source/api.rst:24 2bef00d8aea5436881428624dcc88a3c
+msgid ""
+"**train_data:** the file path of your train data. (default=’ "
+"../data/sopinet/train.csv’)"
+msgstr ""
+
+#: ../../source/api.rst:25 8e0850da4895401aaec57164af335327
+msgid ""
+"**valid_data:** the file path of your valid data. (default=’ "
+"../data/sopinet/valid.csv’)"
+msgstr ""
+
+#: ../../source/api.rst:26 742c5b17be5044a68ea851268f8fadcd
+msgid ""
+"**test_data:** the file path of your test data. (default=’ "
+"../data/sopinet/test.csv’)"
+msgstr ""
+
+#: ../../source/api.rst:27 077518adfbb343cd8908b99b21b25871
+msgid ""
+"**cont_cols:** the columns name of continuous variable in the train data."
+" In our study, we default it to “X_1, X_2 ‧‧‧‧‧‧X_n” but it can be "
+"flexible."
+msgstr ""
+
+#: ../../source/api.rst:28 d1d45ba169404c9db9cf229aab14fd95
+msgid ""
+"**cate_cols:** the columns name of categorical variable in the train "
+"data. In our study, we default it to “C_1, C_2 ‧‧‧‧‧‧C_n” but it can be "
+"flexible."
+msgstr ""
+
+#: ../../source/api.rst:29 01e3a1088adb4bad8bd4730d10917df2
+msgid ""
+"**time_cols:** the columns of time series variable in the train data. "
+"Compare to cont_cols, we processed them into transformer frame. Noticed "
+"that each different time period in the time series needs to be in the "
+"list independently. For example, If you have three days of time series "
+"data of meteorological data (RH,WS,PS)."
+msgstr ""
+
+#: ../../source/api.rst:30 b7dbfd16385c4629b23d31692739733c
+msgid ""
+"**target_cols:** the columns name of prediction in train data. Due to the"
+" ability of simultaneous inversion, it should be set two predictions "
+"name. In our study, we default it to “Y_1, Y_2” but it also can be "
+"flexible."
+msgstr ""
+
+#: ../../source/api.rst:31 4daef7dae07944f388e3373e7c4187fa
+msgid ""
+"**mask_cols:** the columns name of you want to masked in targets value. "
+"The masked value will not participate in the calculation of the loss "
+"function. In our study, we masked the in-situ measurement which are "
+"missing. Note that code used 0 or 1 to determine whether the value mask "
+"or not.(1 = keep, 0 = mask) and the order should be same with "
+"target_cols."
+msgstr ""
+
+#: ../../source/api.rst:34 05438232e1824db6ad13ea1df310f0fb
+msgid "Hyperparameter configuration"
+msgstr ""
+
+#: ../../source/api.rst:37 d96bfa052aba43d99dd0d53bcf515d9e
+msgid "Dataloader"
+msgstr ""
+
+#: ../../source/api.rst:39 bfc5b874f64f4a508eb391477bf41d7b
+msgid ""
+"`batch_size`: The number of data samples captured in one step training. "
+"(default=64)"
+msgstr ""
+
+#: ../../source/api.rst:40 d752d4766fcd418899cb826b69aafe8a
+msgid ""
+"`num_workers`: The number of process created when used dataloader. "
+"(default=4)"
+msgstr ""
+
+#: ../../source/api.rst:43 51f219906a4549e9ba9a1fe3925c079b
+msgid "Model"
+msgstr ""
+
+#: ../../source/api.rst:45 3d50e48731ad407cbbdd9bd9e0f38f4b
+msgid ""
+"**d_embed**: The number of dimensions used to represent each input "
+"feature in the embedding for categorical. (default=32)"
+msgstr ""
+
+#: ../../source/api.rst:46 c9a92f815ef244eaa3c3b0c5a737f37b
+msgid "**d_model**: The number of hidden layer nodes. (default=256)"
+msgstr ""
+
+#: ../../source/api.rst:47 ce695da269d64ede912f563d35444b8b
+msgid "**n_layers**: The number of hidden layer. (default=1)"
+msgstr ""
+
+#: ../../source/api.rst:48 d4b3efc959d841f1915fa5bc3c2af309
+msgid ""
+"**n_head**: The number of attention heads used in the multi-head "
+"attention mechanism. (default=4)"
+msgstr ""
+
+#: ../../source/api.rst:49 22d6420065574a7e90d66bce0788e6b2
+msgid ""
+"**p_drop**: The percent of neurons are temporarily removed from the "
+"network during training. (default=0.3)"
+msgstr ""
+
+#: ../../source/api.rst:50 0f7db66466b24af5bf2f960fbcd37f8f
+msgid "**act_fn**: Activation function. (default=relu)"
+msgstr ""
+
+#: ../../source/api.rst:51 927e8ce73c384380a5a800c2d86dd587
+msgid "**lr**: Learning rate. (default=3e-4)"
+msgstr ""
+
+#: ../../source/api.rst:52 c3b56311d2234b4c9e90b9b3efcb34a1
+msgid ""
+"**weight_decay**: The value for penalizes large weights in the model "
+"during training to prevent overfitting. (default=1e-5)"
+msgstr ""
+
+#: ../../source/api.rst:55 d9f9d424f5ab42a3b91e6883986726ce
+msgid "Model_Callback"
+msgstr ""
+
+#: ../../source/api.rst:57 1c9b469c887345419ca6732cf0d6f9fe
+msgid ""
+"**save_top_k**: Specifies the number of best models to keep based on a "
+"given metric during training on validation accuracy. (default=1, save the"
+" best)"
+msgstr ""
+
+#: ../../source/api.rst:58 e255cb3eb16b43d1b3a538326bd4dbbd
+msgid ""
+"**monitor**: Specifies the metric to monitor during training. "
+"(default=valid_loss)"
+msgstr ""
+
+#: ../../source/api.rst:59 998aa62f56434dfc8e986d1b8c390a86
+msgid ""
+"**mode**: Specifies whether the monitored metric should be minimized "
+"(MAE) or maximized (R). (default=min)"
+msgstr ""
+
+#: ../../source/api.rst:60 d0d39ac9ad314020b798a38867eb1c02
+msgid ""
+"**verbose**: Determines whether to print information about the saving "
+"process to the console. (default=True)"
+msgstr ""
+
+#: ../../source/api.rst:61 638ed6840f704d208603106577e411f4
+msgid ""
+"**patience**: Specifies the number of epochs to wait for improvement in "
+"the monitored metric before stopping training. (default=10)"
+msgstr ""
+
+#: ../../source/api.rst:64 7df17cdec23549ca85cdb09b2863f940
+msgid "Trainer"
+msgstr ""
+
+#: ../../source/api.rst:66 b6371e1582f44449a59d14ac9df66678
+msgid ""
+"**max_epochs**: Specifies the maximum number of epochs to train for. "
+"(default=5)"
+msgstr ""
+
+#: ../../source/api.rst:67 787eb276d11d47e7bf949264190ab9e9
+msgid ""
+"**accelerator**: Specifies the hardware accelerator to use during "
+"training. (default=\"gpu\")"
+msgstr ""
+
+#: ../../source/api.rst:68 f6601bf3d71048c7888e2ead6fe31357
+msgid ""
+"**devices**: Specifies the number of devices to use during training. "
+"(default=1)"
+msgstr ""
+
+#: ../../source/api.rst:69 edb0021e97ef4cd4918113f09cfa959f
+msgid ""
+"**deterministic**: Ensures reproducibility of the training results. "
+"(default=True)"
+msgstr ""
+
