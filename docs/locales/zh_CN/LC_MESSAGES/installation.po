@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ESIDLM \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 13:49+0800\n"
+"POT-Creation-Date: 2023-05-08 23:21+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -19,103 +19,106 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
 
-#: ../../source/installation.rst:3 3134bb9cbd13482d91fbf5e068329f3d
+#: ../../source/installation.rst:3 73be01c36080492f8ce2e055d443d444
 msgid "Installation"
 msgstr "本地部署"
 
-#: ../../source/installation.rst:5 69b92a2e4eca4a07b862b89fc1c09ec3
+#: ../../source/installation.rst:5 82b805240019423cacbac08ba65441fb
 msgid ""
 "All of our source code has been tested with Python 3.9/3.10 on both "
 "Windows 10/11 and Ubuntu 20.04. You can either use 'git clone' to obtain "
 "our code or directly download the zip file from our GitHub project page. "
 "Here, we demonstrate both approaches using Visual Studio Code (VSCode)."
-msgstr "我们所有的代码都已在python3.8,3.9,3.10版本以及Win10/11和Ubuntu 20.04系统进行了测试运行。"
-"您可以使用'git clone'来获取我们的项目源代码，也可以直接从我们的 GitHub 项目页面下载 zip 文件。"
-"在这里，我们将使用Visual Studio Code（VSCode）分别演示这两种部署方法。"
+msgstr ""
+"我们所有的代码都已在 **Python3.8, 3.9, 3.10** 版本以及**Win10/11** 和 **Ubuntu 20.04** 系统进行了测试运行。您可以使用 **git clone** "
+"来获取我们的项目源代码，也可以直接从我们的 GitHub 项目页面下载 zip 文件。在这里，我们将使用Visual Studio "
+"Code（VSCode）分别演示这两种部署方法。"
 
-#: ../../source/installation.rst:8 1421a844e0994a7cb61e78ceba4d347b
+#: ../../source/installation.rst:8 f67697a69e0b42d7b7f8aac2fda83e4a
 msgid "Clone the code"
 msgstr "克隆代码"
 
-#: ../../source/installation.rst:10 e15fdd65aef04e7c9de837f26dfdd07b
+#: ../../source/installation.rst:10 cf5b883d8aa74dae9598468918417442
 msgid "**Installation method 1**"
 msgstr "安装方法一"
 
-#: ../../source/installation.rst:12 c57ca94592064854a27644f70cf6ad2c
+#: ../../source/installation.rst:12 5cc5b5d8005c4334af76874e2e676e4b
 msgid ""
 "Open Visual Studio Code (VSCode) and create a new folder. To clone the "
 "GitHub repository, use the following command:"
 msgstr "打开VSCode并创建一个新的项目目录，在命令行中使用以下代码克隆我们的GitHub仓库"
 
-#: ../../source/installation.rst 7e1f69c1ccf74fc799c71f153c5cab53
+#: ../../source/installation.rst 7ac44ac6eb4b44949ba9b1ed8d09cb63
 msgid "sopinet tutorial 1.png"
 msgstr "sopinet tutorial 1.png"
 
-#: ../../source/installation.rst:22 5a446bc26cbd484795bea12892a27c86
+#: ../../source/installation.rst:22 d09575ce66574de5a8bb521b2541045d
 msgid "**Installation method 2**"
 msgstr "安装方法二"
 
-#: ../../source/installation.rst:24 68b210f87a0f4640b9505baa498ee3a4
+#: ../../source/installation.rst:24 e161d4ea2eb149ebbe13f8df5c22efac
 msgid ""
 "Download the zip file to your local at our project homepage "
 "(`https://github.com/RegiusQuant/ESIDLM "
 "<https://github.com/RegiusQuant/ESIDLM>`_) and unzip to the folder where "
 "you want."
-msgstr "直接进入我们的github仓库主页,下载项目代码的压缩包"
-"(`https://github.com/RegiusQuant/ESIDLM <https://github.com/RegiusQuant/ESIDLM>`_)"
+msgstr ""
+"直接进入我们的Github仓库主页,下载项目代码的压缩包(`https://github.com/RegiusQuant/ESIDLM "
+"<https://github.com/RegiusQuant/ESIDLM>`_)"
 
-#: ../../source/installation.rst 040a763a7cb64dc8996560b7340a11db
+#: ../../source/installation.rst 01e4b28c470741b4864435de821bb409
 msgid "sopinet tutorial 2.png"
 msgstr "sopinet tutorial 2.png"
 
-#: ../../source/installation.rst:31 c94e8003a4694718b464be281b98cb12
+#: ../../source/installation.rst:31 efbec8b5be8042fa92c31c7b56b6d927
 msgid "Build the required environment"
 msgstr "配置代码所需依赖"
 
-#: ../../source/installation.rst:33 ff73175221bc44da9bc089c1a0429f4d
+#: ../../source/installation.rst:33 df10e469f02e437d8febe8aa57410a7b
 msgid ""
 "We have listed all the required packages for our model in the "
-"*environment.yaml* file. You can either configure them one by one in your "
+"*environment.yml* file. You can either configure them one by one in your "
 "existing environment or create a new environment automatically using "
 "conda (recommended). In this guide, we demonstrate the latter approach."
-msgstr "我们已经在 environment.yml 文件中列出了模型所需的所有依赖。你可以根据现有环境中逐个配置它们,"
-"为了避免污染你的原有环境，我们推荐你使用conda自动创建一个新环境。"
-"在本教程中，我们将演示如何从零创建一个新的环境并配置代码所需要的依赖包。"
+msgstr ""
+"我们已经在 environment.yml "
+"文件中列出了模型所需的所有依赖。你可以根据现有环境中逐个配置它们,为了避免污染你的原有环境，我们推荐你使用conda自动创建一个新环境。在本教程中，我们将演示如何从零创建一个新的环境并配置代码所需要的所有依赖。"
 
-#: ../../source/installation.rst:35 4aafe423ca91427c9f3b3bd12308e236
+#: ../../source/installation.rst:35 641e4af9f4504820b1dbadeff5b59e35
 msgid ""
 "**Setting environment method 1** First, navigate to the created folder "
 "and use the following code to build the required Python packages (please "
 "note that you should have conda software installed beforehand). You can "
 "also customize the name of your environment by replacing *myenv* with "
 "your desired name."
-msgstr "**设置环境方法一** :在此之前，请确保你已经正确安装了anaconda，打开vscode到ESIDLM的项目文件,"
-"通过输入以下命令行代码即可建立一个新的环境，并根据yaml文件的配置所有依赖包，"
-"你还可以将 myenv 替换为自定义的环境名称。"
-""
+msgstr ""
+"**设置环境方法一** "
+":在此之前，请确保你已经正确安装了anaconda，打开vscode到ESIDLM的项目文件,通过输入以下命令行代码即可建立一个新的环境，并根据yaml文件的配置所有依赖包，你还可以将"
+" myenv 替换为自定义的环境名称。"
 
-#: ../../source/installation.rst:42 185722ad777e451a870c9371a239539a
+#: ../../source/installation.rst:42 cfcba923324c45d19a14167528f61056
 msgid ""
 "**Setting environment method 2** Additionally, we recommend using Mamba-"
 "forge in our tutorials. It helps to speed up the installation process and"
 " improve installation stability. To install Mamba, use the following "
 "command:"
-msgstr "**设置环境方法二** :在这里我们推荐你使用mamba forge来配置ESIDLM的环境依赖，相比于conda，Mamba的整个安装过程更加迅速平稳。"
-"Mamba需要通过conda安装，命令如下:"
+msgstr ""
+"**设置环境方法二** :在这里我们推荐你使用mamba "
+"forge来配置ESIDLM的环境依赖，相比于conda，Mamba的整个安装过程更加迅速平稳。Mamba需要通过conda安装，命令如下:"
 
-#: ../../source/installation.rst:49 a4107be681ce476aae6ec710cd4d5a06
+#: ../../source/installation.rst:49 6968fdd9eb8b4a07b18877b455b3a02e
 msgid ""
 "Next, the installation command is the same as for conda; simply replace "
 "'conda' with 'mamba', as illustrated below:"
 msgstr "接下来，Mamba安装命令与之前conda的完全相同;只需将“conda”替换为“mamba”，如下所示:"
 
-#: ../../source/installation.rst:55 1188816b45504859b2f1b7386edd08e0
+#: ../../source/installation.rst:55 c2d81aa0f8c44a6eb54f34ba1bee4037
 msgid ""
 "When the environment is established successfully, you will see the "
 "following figure."
-msgstr "当你成功配置好环境依赖后，你将看到下图激活环境的提示。"
+msgstr "当你成功配置好环境依赖后，你将看到下图激活环境的提示，通过conda activate env切换到所建立环境后即可使用ESDILM模型。"
 
-#: 34549c9bd67943c4821794c14c519f6a
+#: ab415d9545df49a3bd1a6af6453556e5
 msgid "sopinet tutorial 3.png"
 msgstr "sopinet tutorial 3.png"
 

@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/publications.rst:3 e9ceea41e4d94b50981c94f8f66a2431
 msgid "Publications"
-msgstr "出版"
+msgstr "出版物"
 
 #: ../../source/publications.rst:6 cba124a648fa4a9dafacbc29508f6191
 msgid "Paper"

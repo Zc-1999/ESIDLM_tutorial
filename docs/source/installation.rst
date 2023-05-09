@@ -2,7 +2,7 @@
 Installation
 ============
 
-All of our source code has been tested with Python 3.9/3.10 on both Windows 10/11 and Ubuntu 20.04. You can either use 'git clone' to obtain our code or directly download the zip file from our GitHub project page. Here, we demonstrate both approaches using Visual Studio Code (VSCode).
+All of our source code has been tested with Python 3.9/3.10 on both Windows 10/11 and Ubuntu 20.04. You can either use git clone to obtain our code or directly download the zip file from our GitHub project page. Here, we demonstrate both approaches using Visual Studio Code (VSCode).
 
 Clone the code
 --------------

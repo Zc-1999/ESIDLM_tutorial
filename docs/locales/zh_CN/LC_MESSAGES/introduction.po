@@ -32,9 +32,9 @@ msgid ""
 "has integrated a variety of advanced deep learning models, as follows. If"
 " you have any questions, please contact yanxing@bnu.edu.cn."
 msgstr "ESIDLM（增强型时空可解释深度学习模型）是由北京师范大学晏星教授团队开发和维护的Python包"
-"（团队主页 <https://gcess.bnu.edu.cn/yjspy/dsjj/157170.html>`_）。"
-"目前，ESIDLM已经集成了多种成熟的深度学习模型，具体模型如下所示。如有任何疑问，可以联系我们。"
-"邮箱:yanxing@bnu.edu.cn."
+"(`团队主页 <https://gcess.bnu.edu.cn/yjspy/dsjj/157170.html>`_)。"
+"目前，ESIDLM已经集成了多种成熟的深度学习模型，下文将会简单介绍每一个模型，如下所示。如有任何疑问，可以直接联系我们邮箱。"
+"邮箱:yanxing@bnu.edu.cn. 或在我们的项目主页提交issues。" 
 
 #: ../../source/introduction.rst:8 6280c59823254f5aa6ca743a8118379e
 msgid "EntityDenseNet"
