@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the ESIDLM package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: ESIDLM \n"
@@ -24,7 +23,6 @@ msgid "Installation"
 msgstr "本地部署"
 
 #: ../../source/installation.rst:5 b47861f395fd42ebb84f0dffc36022dd
-#, fuzzy
 msgid ""
 "All of our source code has been tested with Python 3.9/3.10 on both "
 "Windows 10/11 and Ubuntu 20.04. You can either use git clone to obtain "
