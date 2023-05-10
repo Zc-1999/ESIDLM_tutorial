@@ -24,9 +24,17 @@ a:hover {
   margin-right: auto;
 }
 
+.bd-page-width {
+  max-width: 95rem;
+}
+
+/*图标按钮*/
+.btn-outline-primary {
+  border-color: #FFFFFF;
+}
 /*调整导航占用宽度*/
 .bd-sidebar-primary {
-  width: 200px !important;
+  width: 250px !important;
   margin-left: auto;
   margin-right: auto;
 }
