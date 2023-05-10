@@ -1,4 +1,5 @@
-/*颜色设置*/
+/*ZCZCZCZCZCZCZCZC*/
+/*网页整体颜色设置*/
 :root {
   --pst-color-primary: #0050A2 !important;
   --pst-color-info: #0050A2 !important;
@@ -12,7 +13,7 @@ a:hover {
   color: #0050A2 !important;
 }
 
-/*调整左右留白*/
+/*网页调整左右留白*/
 .container {
   max-width: 100%;
 }
@@ -23,8 +24,14 @@ a:hover {
   margin-right: auto;
 }
 
+/*调整导航占用宽度*/
+.bd-sidebar-primary {
+  width: 200px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-/* image大小 */
+/* panel图片大小 */
 .panel-image {
   width: 80px; 
   height: 80px;

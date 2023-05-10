@@ -1,0 +1,35 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the ESIDLM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ESIDLM \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-10 10:28+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/api/index.rst:3 a709c7e0443341ccaa4fae606d542092
+msgid "API reference"
+msgstr ""
+
+#: ../../source/api/index.rst:5 53e2b8e4e22843b0975c2c31353bdf12
+msgid ""
+"This page gives an overview of all public ESIDLM objects, functions and "
+"methods. All classes and functions exposed in ``esidlm.*`` namespace are "
+"public."
+msgstr "本教程介绍了使用esidlm所需要建立的类和函数。"
+
+#: ../../source/api/index.rst:17 9abbcbcc0fd846b7be153d161c98c4b0
+msgid "We are currently constructing the document, please wait."
+msgstr "我们正再努力的建设教程中，请耐心等候。"
+

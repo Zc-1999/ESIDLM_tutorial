@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ESIDLM \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 23:21+0800\n"
+"POT-Creation-Date: 2023-05-10 10:28+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
 
-#: ../../source/quickstart.rst:3 d7d3c75961e64b11aa2d4a4b894fd075
-msgid "Quickstart"
-msgstr "快速入门"
+#: ../../source/quickstart/sopi_qs.rst:3 bd75f8257d8c41809b8cf48d3c5d5939
+msgid "SOPINet QuickStart"
+msgstr "SOPINet模型快速入门"
 
-#: ../../source/quickstart.rst:5 0a315dda8cf4460db6149383e734e176
+#: ../../source/quickstart/sopi_qs.rst:5 c507968ef91a4282854c92b63e3f7175
 msgid ""
 "Example Data Link: `https://zenodo.org/record/7815394 "
 "<https://zenodo.org/record/7815394>`_"
@@ -30,37 +30,37 @@ msgstr ""
 "样例数据链接：`https://zenodo.org/record/7815394 "
 "<https://zenodo.org/record/7815394>`_"
 
-#: ../../source/quickstart.rst:8 7c71f9ecaa324af3b961bd90d5b2eeff
+#: ../../source/quickstart/sopi_qs.rst:8 4ff0c7fe745048d986cab68a8c6bbfec
 msgid "Data preprocessing"
 msgstr "数据预处理"
 
-#: ../../source/quickstart.rst:10 325e0d63f07c45c5a0bcc590b243420c
+#: ../../source/quickstart/sopi_qs.rst:10 ea189a0239fc4a3d8f8365ccb6231444
 msgid "The data used for SOPiNet consists of two parts:"
-msgstr "本教程以SOPiNet为例，模型所需数据分别为以下两部分:"
+msgstr "SOPiNet模型所需数据分为以下两部分:"
 
-#: ../../source/quickstart.rst:13 b08b7471f0b5487ebea64215b25c7f64
+#: ../../source/quickstart/sopi_qs.rst:13 423b008e6daa4d27b118e1e8370d4408
 msgid "labeled data"
-msgstr "有标签数据"
+msgstr "标签数据"
 
-#: ../../source/quickstart.rst:15 ec83ea33bc9c4e049342e2eab45585d1
+#: ../../source/quickstart/sopi_qs.rst:15 4fdb9c3912d6490481ef2da8ed14fd74
 msgid ""
 "The first part is the labeled data for modeling, which should be in .csv "
 "format and named as train.csv, valid.csv, and test.csv for training, "
 "validation, and testing data, respectively."
 msgstr "含有标签的数据(Y)用于模型的训练、验证和测试，应采用.csv文件格式，通常命名为 train.csv、valid.csv 和 test.csv。"
 
-#: ../../source/quickstart.rst:18 e4fc2b06c57c411e93fdb0dbd6a1f9f3
+#: ../../source/quickstart/sopi_qs.rst:18 997c1a0bca82474f8d00726bee1ecc37
 msgid "unlabeled data"
 msgstr "无标签数据"
 
-#: ../../source/quickstart.rst:20 1ad1ae9350704c1d93608875d5d450d7
+#: ../../source/quickstart/sopi_qs.rst:20 6bb3bdb827484b2193e0feb7239740d5
 msgid ""
 "The second part is the unlabeled data for retrieving PM2.5 and Ozone "
 "levels from the full image. This data can be in .csv format with any "
 "name, typically named according to its date"
 msgstr "无标签数据用于建立好模型后的推断，相比于标签数据，两者格式相同，仅缺少标签列(Y)。"
 
-#: ../../source/quickstart.rst:22 70f3e958946f425082cb869fa9dbe3fe
+#: ../../source/quickstart/sopi_qs.rst:22 19c0b5237923437ca49e2deb789258f9
 msgid ""
 "The format within each .csv file should adhere to the following "
 "structure. To clarify the data structure, we designate continuous "
@@ -73,17 +73,20 @@ msgid ""
 " structure is as follows:"
 msgstr ""
 "为了清晰阐明我们数据的结构，在本案例我们指定以 ``X_*`` 开头的为连续型变量，以 ``C_*`` 开头的为类别型变量，其中 * "
-"为序列号，由于SOPINet为多任务模型，所以区别于其他模型，我们本次样例中含有两个Y值,我们分别设置为Y_1和Y_2。此外，为了利用更多的训练样本，我们还使用了两列掩码来解决某些站点缺值Y值的问题，即当缺少Y_1或Y_2时，对应的Y_1_mask或Y_2_mask应该为0。值得强调的是，在实际使用中，你可以随意设置各种变量的命名，只需要在对应的参数配置中设置好（详情见API中的基本参数配置），本样例中数据结构如下："
+"为序列号，由于SOPINet为多任务模型，所以区别于其他模型，我们本次样例中含有两个Y值,我们分别设置为Y_1和Y_2。"
+"此外，为了利用更多的训练样本，我们还使用了两列掩码来解决某些站点缺值Y值的问题，"
+"即当缺少Y_1或Y_2时，对应的Y_1_mask或Y_2_mask应该为0。值得强调的是，在实际使用中，"
+"你可以随意设置各种变量的命名，只需要在对应的参数配置中设置好（详情见API中的基本参数配置），本样例中数据结构如下："
 
-#: 9178af3239b740dca2f1db5e18f1e45b
+#: 12e9f7379f5c4737bd2f86ec49eb3adc
 msgid "sopinet-tutorial-4.png"
 msgstr "sopinet-tutorial-4.png"
 
-#: ../../source/quickstart.rst:29 6d7fe3b2799e496b9cbe536a2d03f215
+#: ../../source/quickstart/sopi_qs.rst:29 0738254637f34db0a2e0acfd945b20d6
 msgid "Parameter Configuration"
 msgstr "参数配置"
 
-#: ../../source/quickstart.rst:31 096be7bcde784de38389710bcc56c2c3
+#: ../../source/quickstart/sopi_qs.rst:31 7e36bacf49ba48b5914ef50abf2f22fb
 msgid ""
 "Once you have completed the installation of the model, you will find the "
 "following main folders in the project: esidlm, examples, and outputs. All"
@@ -97,13 +100,17 @@ msgid ""
 "configurations into a dictionary variable called "
 "``SOPINET_TRAINING_CONFIG``. We will provide a brief explanation of the "
 "modifications you need to make locally in the API."
-msgstr "完成模型配置后，你可以将在项目中找到以下文件夹：esidlm、example。我们所有源代码都封装在esidlm文件夹中，因此我们不建议你修改此文件夹中的代码。结合我们上传的样例数据，你只需要调整一些简单的参数配置，并按顺序运行SOPiNet.ipynb笔记本中的每个单元即可构建自己的模型。为了简化使用，我们已将所有参数配置整合到一个字典变量中（详情见API中的参数配置）。"
+msgstr "完成模型配置后，你可以将在项目中找到以下文件夹：esidlm、example。"
+"我们所有源代码都封装在esidlm文件夹中，因此我们不建议你修改此文件夹中的代码。"
+"结合我们上传的样例数据，你只需要调整一些简单的参数配置，"
+"并按顺序运行SOPiNet.ipynb笔记本中的每个单元即可构建自己的模型。"
+"为了简化使用，我们已将所有参数配置整合到一个字典变量中（详情见API中的参数配置）。"
 
-#: ../../source/quickstart.rst:34 efc455676fb64c6c8bc737831a345dd0
+#: ../../source/quickstart/sopi_qs.rst:34 3330916f245b44b5b0e2c59f4aa631eb
 msgid "Training the model"
 msgstr "模型训练"
 
-#: ../../source/quickstart.rst:36 39910604547340c8b82f35039b79557a
+#: ../../source/quickstart/sopi_qs.rst:36 981eb878ad234b0583735c224d0edf7b
 msgid ""
 "Here, we demonstrate a complete training process using example train "
 "data. First, open the ESIDLM project and update the system path using the"
@@ -111,15 +118,17 @@ msgid ""
 "optimization parameters. After configuring the parameters appropriately, "
 "create a ``SOPiNetLearner`` object and invoke the ``run_model_training`` "
 "function."
-msgstr ""
-"在这里，我们将结合样例数据和SOPiNet样例代码演示一次完整的训练过程。首先，导入sys模块更新系统路径并导入ESIDLM模块中的SOPiNetLearner类(不设置系统路径会导入报错)。接下来，设置您自己的数据路径和优化参数。正确配置参数后，创建一个对象并调用"
-" ``run_model_training`` 函数。"
 
-#: 7acf252f564d4352abcf0efd4639070a
+msgstr ""
+"在这里，我们将结合样例数据和SOPiNet样例代码演示一次完整的训练过程。"
+"首先，导入sys模块更新系统路径并导入ESIDLM模块中的SOPiNetLearner类(不设置系统路径会导入报错)。"
+"接下来，设置您自己的数据路径和优化参数。正确配置参数后，创建一个对象并调用 ``run_model_training`` 函数。"
+
+#: bf4169a83f9043568ba837ad93f7ca17
 msgid "sopinet-tutorial-5.png"
 msgstr "sopinet-tutorial-5.png"
 
-#: ../../source/quickstart.rst:41 9a5e372bbe7f434284ace66fa70bc4ba
+#: ../../source/quickstart/sopi_qs.rst:41 1f2ef4ba24cf4433856fc20c3de6b450
 msgid ""
 "In this instance, we set the parameters as follows: \"batch_size\": 64, "
 "\"d_embed\": 32, \"d_model\": 128, \"n_layers\": 1, \"n_head\": 4, and "
@@ -128,27 +137,28 @@ msgid ""
 "0.59 for PM2.5 (Y_1) and 0.61 for ozone (Y_2). At this point, a full "
 "round of model training is complete, and the remaining task is to fine-"
 "tune the parameters and optimize the model further."
+
 msgstr ""
 "在演示中，我们设置了如下的参数：“batch_size”：64，“d_embed”：32，“d_model”：128，“n_layers”：1，“n_head”：4，“p_drop”：0.1。如你所见，仅经过20个周期的训练（大约需要"
 " 2 "
 "分钟），我们的模型就达到了很好的准确性，R2均达到了0.6左右。至此，我们完成了一次完整的模型训练，剩下的任务就是对参数进行不断调整，进一步优化模型。"
 
-#: 8636f8acee92469d9d4d24c90f745e67
+#: bedef38153be4bedb77901cf02d543eb
 msgid "sopinet-tutorial-6.jpg"
 msgstr "sopinet-tutorial-6.jpg"
 
-#: ../../source/quickstart.rst:46 c64929f94240471eab59363ce08adfd7
+#: ../../source/quickstart/sopi_qs.rst:46 5c4287fab07d4d72b70ec121ec932a32
 msgid ""
 "It should be emphasized that both each training of the model and "
 "Hyperparameter file are saved in the output folder (default=’ /.. "
 "/outputs/sopinet’)."
 msgstr "需要强调的是，每次训练后的模型和超参数文件都保存在项目output文件夹中（default=' /.. /outputs/sopinet'）。"
 
-#: ../../source/quickstart.rst:49 cae0ee21f20e49db827c44711a786bad
+#: ../../source/quickstart/sopi_qs.rst:49 f96fd964b36141a1bc1a236dd7569c66
 msgid "Using model Inference"
 msgstr "模型推演"
 
-#: ../../source/quickstart.rst:51 1c1507fe58974a7698042ed6ba435905
+#: ../../source/quickstart/sopi_qs.rst:51 85ad800287e74793978843c75d4540fa
 msgid ""
 "Once you have determined the best optimized model, it can be used for "
 "inference. You should configure the dictionary named "
@@ -163,7 +173,7 @@ msgstr ""
 "函数执行推演功能随后你会在输出文件夹中看到模型推演的结果，该结果在原始csv的基础上新增了预测值 ``Y_predict`` "
 "列。至此，你已经完成了模型训练推演所有流程。"
 
-#: 9e33a5b992f744d0bcd15d2e5283751d
+#: a43650baa3c94332a5f5a89660196d74
 msgid "sopinet-tutorial-7.jpg"
 msgstr "sopinet-tutorial-7.jpg"
 

@@ -23,8 +23,8 @@ ESIDLM: Enhanced Spatial-Temporal Interpretable Deep Learning Model
 
    introduction.rst
    installation.rst
-   quickstart.rst
-   api.rst
+   quickstart/index.rst
+   api/index.rst
    publications.rst
 
 .. raw:: html
@@ -72,7 +72,7 @@ ESIDLM: Enhanced Spatial-Temporal Interpretable Deep Learning Model
    Jump right in and get hands-on experience with ESDLM
 
    +++
-   .. link-button:: quickstart
+   .. link-button:: quickstart/index
       :type: ref
       :text: Quickstart
       :classes: btn-block btn-secondary stretched-link
@@ -86,7 +86,7 @@ ESIDLM: Enhanced Spatial-Temporal Interpretable Deep Learning Model
    Explore the comprehensive API documentation
 
    +++
-   .. link-button:: api
+   .. link-button:: api/index
       :type: ref
       :text: API
       :classes: btn-block btn-secondary stretched-link
@@ -104,5 +104,27 @@ ESIDLM: Enhanced Spatial-Temporal Interpretable Deep Learning Model
       :type: ref
       :text: Publications
       :classes: btn-block btn-secondary stretched-link
+
+.. raw:: html
+
+   <div class="container">
+   <div class="toggle-wrapper blue">
+      <input type="checkbox" class="toggle-checkbox" onclick="jumpToCNdocument()">
+      <div class="toggle-container">
+         <div class="toggle-ball"></div>
+      </div>
+      <span class="toggle-text">切换中文文档</span>
+   </div>
+   </div>
+
+   <script>
+   function jumpToCNdocument() {
+      if (document.querySelector('.toggle-checkbox').checked) {
+         setTimeout(function() {
+         window.location.href = 'https://esidlm-tutorial.readthedocs.io/zh_CN/latest/';
+         }, 500); 
+         }
+      }
+   </script>
 
 

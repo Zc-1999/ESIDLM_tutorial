@@ -1,278 +1,96 @@
-/* Getting started pages */
-
-/* data intro */
-.gs-data {
-font-size: 0.9rem;
+/* 开关容器 */
+.toggle-wrapper{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    border-radius: 3.125em;
+    overflow: hidden;
+}
+/* 复选框，隐藏 */
+.toggle-checkbox{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+/* 开关背景 默认样式（关闭）*/
+.toggle-container{
+    display: flex;
+    position: relative;
+    border-radius: inherit;
+    width: 4em;
+    height: 2em;
+    background-color: #d1d4dc;
+    box-shadow: inset 0.0625em 0 0 #d4d2de,
+    inset -0.0625em 0 0 #d4d2de,
+    inset 0.125em 0.25em 0.125em 0.25em #b5b5c3;
+    transition: all 0.4s;
 }
 
-.gs-data-title {
-align-items: center;
-font-size: 0.9rem;
-}
-
-.gs-data-header {
-background-color: var(--pst-color-on-surface);
-}
-
-.gs-data-list {
-background-color: var(--pst-color-on-background);
-}
-
-.gs-data-title .badge {
-margin: 10px;
-padding: 5px;
-}
-
-.gs-data .badge {
-cursor: pointer;
-padding: 10px;
-border: none;
-text-align: left;
-outline: none;
-font-size: 12px;
-}
-
-.gs-data .btn {
-background-color: grey;
-border: none;
-}
-
-/* note/alert properties */
-
-.alert-heading {
-font-size: 1.2rem;
-}
-
-/* callout properties */
-.gs-callout {
-padding: 20px;
-margin: 20px 0;
-border: 1px solid #eee;
-border-left-width: 5px;
-border-radius: 3px;
-}
-.gs-callout h4 {
-margin-top: 0;
-margin-bottom: 5px;
-}
-.gs-callout p:last-child {
-margin-bottom: 0;
-}
-.gs-callout code {
-border-radius: 3px;
-}
-.gs-callout+.gs-callout {
-margin-top: -5px;
-}
-.gs-callout-remember {
-border-left-color: var(--pst-color-secondary);
-align-items: center;
-font-size: 1.2rem;
-}
-.gs-callout-remember h4 {
-color:  var(--pst-color-secondary);
-}
-
-/* reference to user guide */
-.gs-torefguide {
-align-items: center;
-font-size: 0.9rem;
-background-color: var(--pst-color-on-background);
-border-radius: .25rem;
-padding: 2px;
-}
-
-.gs-torefguide .badge {
-background-color: var(--pst-color-primary);
-margin: 10px 10px 10px 10px;
-padding: 5px;
-}
-
-.gs-torefguide p {
-margin-top: 1rem;
-}
-
-/* question-task environment */
-
-ul.task-bullet, ol.custom-bullet{
-list-style:none;
-padding-left: 0;
-margin-top: 2em;
-}
-
-ul.task-bullet > li:before {
-    content:"";
-    height:2em;
-    width:2em;
-    display:block;
-    float:left;
-    margin-left:-2em;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-color: var(--pst-color-primary);
+.toggle-wrapper.blue > .toggle-checkbox:checked + .toggle-container {
+    background-color: #0050A2;
+    box-shadow: inset 0.0625em 0 0 #0050A2,
+                inset -0.0625em 0 0 #0050A2,
+                inset 0.125em 0.25em 0.125em 0.25em #003F88;
+  }
+/* 灰色小球 默认样式（关闭） */
+.toggle-ball{
+    position: relative;
     border-radius: 50%;
-    background-size:100%;
-    background-image:url('../question_mark_noback.svg');
+    width: 2em;
+    height: 2em;
+    background-image: radial-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0) 16%),
+    radial-gradient(#d2d4dc,#babac2);
+    background-position: -0.25em -0.25em;
+    background-size: auto, calc(100% + 0.25em) calc(100% + 0.25em);
+    background-repeat: no-repeat;
+    box-shadow: 0.25em 0.25em 0.25em #8d889e,
+    inset 0.0625em 0.0625em 0.25em #d1d1d6,
+    inset -0.0625em -0.0625em 0.25em #8c869e;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+/* 彩色小球 打开样式（默认隐藏） */
+.toggle-ball::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-position: -0.25em -0.25em;
+    background-size: auto, calc(100% + 0.25em) calc(100% + 0.25em);
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.4s;
 }
 
-ul.task-bullet > li {
-border-left: 1px solid var(--pst-color-primary);
-padding-left:1em;
+.toggle-wrapper.blue > .toggle-container > .toggle-ball::after {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0) 16%),
+                      radial-gradient(#003F88, #003F88);
+    box-shadow: 0.25em 0.25em 0.25em #2634d0,
+                inset 0.0625em 0.0625em 0.25em #8dd5ff,
+                inset -0.0625em -0.0625em 0.25em #1500ac;
+  }
+
+/* 显示彩色小球 */
+.toggle-wrapper > .toggle-checkbox:checked + .toggle-container > .toggle-ball::after{
+    opacity: 1;
+}
+/* 打开状态下小球移动到右侧 */
+.toggle-checkbox:checked + .toggle-container > .toggle-ball{
+    transform: translateX(100%);
 }
 
-ul.task-bullet > li > p:first-child {
-font-size: 1.1rem;
-padding-left: 0.75rem;
-}
-
-/* Getting started index page */
-
-.comparison-card {
-background-color: var(--pst-color-background);
-border-radius:0;
-padding: 30px 10px 10px 10px;
-margin: 10px 0px;
-}
-
-.comparison-card p.card-text {
-margin: 0px;
-}
-
-.comparison-card .sd-card-img-top {
-margin: 10px;
-margin-bottom: 20px;
-height: 52px;
-background: none !important;
-}
-
-.comparison-card .sd-btn-secondary {
-background-color: #6c757d !important;
-border-color: #6c757d !important;
-}
-
-.comparison-card .sd-btn-secondary:hover {
-background-color: #5a6268 !important;
-border-color: #545b62 !important;
-}
-
-.comparison-card .card-footer {
-border: none;
-background-color: var(--pst-color-background);
-}
-
-.install-block {
-padding-bottom: 30px;
-}
-
-.install-card .card-header {
-border: none;
-background-color: transparent;
-padding: 1rem 1rem 0rem 1rem;
-}
-
-.install-card .card-header p.card-text {
-font-size: 1.1rem;
-font-weight: bold;
-}
-
-.install-card .card-footer {
-border: none;
-background-color: transparent;
-}
-
-.install-card pre {
-margin: 0 1em 1em 1em;
-}
-
-.install-card .sd-btn-secondary {
-background-color: #6c757d !important;
-border-color: #6c757d !important;
-}
-
-.install-card .sd-btn-secondary:hover {
-background-color: #5a6268 !important;
-border-color: #545b62 !important;
-}
-
-.custom-button {
-background-color:#DCDCDC;
-border: none;
-color: #484848;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 0.9rem;
-border-radius: 0.5rem;
-max-width: 120px;
-padding: 0.5rem 0rem;
-}
-
-.custom-button a {
-color: #484848;
-}
-
-.custom-button p {
-margin-top: 0;
-margin-bottom: 0rem;
-color: #484848;
-}
-
-/* intro to tutorial collapsed cards */
-
-.tutorial-accordion {
-margin-top: 20px;
-margin-bottom: 20px;
-}
-
-.tutorial-card .card-header.card-link .btn {
-margin-right: 12px;
-}
-
-.tutorial-card .card-header.card-link .btn:after {
-content: "-";
-}
-
-.tutorial-card .card-header.card-link.collapsed .btn:after {
-content: "+";
-}
-
-.tutorial-card-header-1 {
-justify-content: space-between;
-align-items: center;
-}
-
-.tutorial-card-header-2 {
-justify-content: flex-start;
-align-items: center;
-font-size: 1.3rem;
-}
-
-.tutorial-card .card-header {
-cursor: pointer;
-background-color: var(--pst-color-surface);
-border: 1px solid var(--pst-color-border)
-}
-
-.tutorial-card .card-body {
-background-color: var(--pst-color-on-background);
-}
-
-.tutorial-card .badge {
-background-color: var(--pst-color-primary);
-margin: 10px 10px 10px 10px;
-padding: 5px;
-}
-
-.tutorial-card .gs-badge-link p {
-margin: 0px;
-}
-
-
-.tutorial-card .gs-badge-link a {
-color: var(--pst-color-text-base);
-text-decoration: none;
-}
-
-.tutorial-card .badge:hover {
-background-color: grey;
+/*左侧标注设置*/
+.toggle-text {
+    align-items: center; 
+    font-weight: bold; 
+    color: #003F88;
+    margin-left: 10px;
 }

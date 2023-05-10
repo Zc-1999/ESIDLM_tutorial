@@ -1,0 +1,34 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the ESIDLM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ESIDLM \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-10 10:28+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/quickstart/index.rst:3 86f9577193024aa6bbd80805f07315ea
+msgid "QuickStart"
+msgstr "快速入门"
+
+#: ../../source/quickstart/index.rst:5 37435c49933d4ddeafcd4e3d7f4099c2
+msgid ""
+"Welcome to the Quickstart Guide for **ESIDLM**! This guide will help you "
+"get started with three Deep Learning models."
+msgstr "欢迎来到ESIDLM库快速入门，在这里我们将会带你快速上手ESIDLM中的三种深度学习模型。"
+
+#: ../../source/quickstart/index.rst:17 968b2c98d3ef41a0994fb921cba27501
+msgid "We are currently constructing the document, please wait."
+msgstr "我们正再努力的建设教程中，请耐心等候。"
+

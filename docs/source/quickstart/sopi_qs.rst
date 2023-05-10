@@ -1,6 +1,6 @@
-==========
-Quickstart
-==========
+==================
+SOPINet QuickStart
+==================
 
 Example Data Link: `https://zenodo.org/record/7815394 <https://zenodo.org/record/7815394>`_
 
@@ -21,7 +21,7 @@ The second part is the unlabeled data for retrieving PM2.5 and Ozone levels from
 
 The format within each .csv file should adhere to the following structure. To clarify the data structure, we designate continuous variables to start with ``X_*``, where * should be a sequential number. Categorical variables should start with ``C_*``, where * should also be a sequential number. For the labeled data, it should contain both PM2.5 and Ozone in-situ measurements for training, and we default these to Y_1 and Y_2. Moreover, to utilize more training samples, we use mask columns to address the absence of observations at certain sites. The primary data structure is as follows:
 
-.. image:: ../images/sopinet-tutorial-4.png
+.. image:: ../../images/sopinet-tutorial-4.png
    :alt: sopinet-tutorial-4.png
    :align: center
 
@@ -35,12 +35,12 @@ Training the model
 
 Here, we demonstrate a complete training process using example train data. First, open the ESIDLM project and update the system path using the 'sys' module (in the first code cell). Next, set your own data path and optimization parameters. After configuring the parameters appropriately, create a ``SOPiNetLearner`` object and invoke the ``run_model_training`` function.
 
-.. image:: ../images/sopinet-tutorial-5.png
+.. image:: ../../images/sopinet-tutorial-5.png
    :alt: sopinet-tutorial-5.png
 
 In this instance, we set the parameters as follows: "batch_size": 64, "d_embed": 32, "d_model": 128, "n_layers": 1, "n_head": 4, and "p_drop": 0.1. As you can see, after just 20 epochs of training (taking about 2 minutes), we have achieved remarkable accuracy with an R2 of 0.59 for PM2.5 (Y_1) and 0.61 for ozone (Y_2). At this point, a full round of model training is complete, and the remaining task is to fine-tune the parameters and optimize the model further.
 
-.. image:: ../images/sopinet-tutorial-6.jpg
+.. image:: ../../images/sopinet-tutorial-6.jpg
    :alt: sopinet-tutorial-6.jpg
 
 It should be emphasized that both each training of the model and Hyperparameter file are saved in the output folder (default=’ /.. /outputs/sopinet’).
@@ -50,5 +50,5 @@ Using model Inference
 
 Once you have determined the best optimized model, it can be used for inference. You should configure the dictionary named ``SOPINET_INFERENCE_CONFIG``, which is quite similar to the training model. First, set the input and output folders, ensuring that the input data is unlabeled. Then, set the optimal model path and execute the inference function.
 
-.. image:: ../images/sopinet-tutorial-7.jpg
+.. image:: ../../images/sopinet-tutorial-7.jpg
    :alt: sopinet-tutorial-7.jpg

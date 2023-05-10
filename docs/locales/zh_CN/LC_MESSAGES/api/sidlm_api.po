@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023
+# This file is distributed under the same license as the ESIDLM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ESIDLM \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-10 11:19+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/api/sidlm_api.rst:3 79790caa0a844bbaa261f17c3e12abd8
+msgid "SIDLMNet API"
+msgstr "SIDLMNet 接口参考"
+
+#: ../../source/api/sidlm_api.rst:7 b0cf1ec34540440fa242dc6a6944e9fd
+msgid "SIDLMNetLearner Parameter Configuration"
+msgstr "SIDLMNetLearner参数配置"
+
+#: ../../source/api/sidlm_api.rst:10 91c7e8f0f8d046089700b9fc4e068e2e
+msgid "Global"
+msgstr "全局参数"
+
+#: ../../source/api/sidlm_api.rst:12 05b74cbd4a7847968b28fd1668a96788
+msgid "**seed:** the random seed in model. (default=42)."
+msgstr "**seed:** 模型中的随机种子。(默认=42)"
+
+#: ../../source/api/sidlm_api.rst:13 775f470db1d64e9a88de44572aebc572
+msgid ""
+"**output_folder:** This parameter control output path of the model after "
+"training, we default it to \"../outputs/sidlm\""
+msgstr "**output_folder:** 模型训练后的保存路径，我们默认为 \"../outputs/sidlm\""
+
+#: ../../source/api/sidlm_api.rst:16 e10115a08010485ca3b52d0f36ed492b
+msgid "Data"
+msgstr "数据"
+
+#: ../../source/api/sidlm_api.rst:18 b41244e8e8544f108a790cdd7513a97a
+msgid ""
+"**train_data:** the file path of your train data. (default=’ "
+"../data/sidlm/train.csv’)"
+msgstr "**train_data:**  训练数据的文件路径。(默认=’ ../data/sidlm/train.csv’)"
+
+#: ../../source/api/sidlm_api.rst:19 3ee35c86702349beab8c261ceab6d251
+msgid ""
+"**valid_data:** the file path of your valid data. (default=’ "
+"../data/sidlm/valid.csv’)"
+msgstr "**valid_data:**  验证数据的文件路径。(默认=’ ../data/sidlm/valid.csv’)"
+
+#: ../../source/api/sidlm_api.rst:20 a8d6114736ee40988cd3d607074d6403
+msgid ""
+"**test_data:** the file path of your test data. (default=’ "
+"../data/sidlm/test.csv’)"
+msgstr "**test_data:**  测试数据的文件路径。(默认=’ ../data/sidlm/test.csv’)"
+
+#: ../../source/api/sidlm_api.rst:21 b6083395a72e43d18f3d609c7ac9a054
+msgid "**wide_cols:**"
+msgstr ""
+
+#: ../../source/api/sidlm_api.rst:22 01177b0484334285a3c76cdbd621ad30
+msgid ""
+"**cont_cols:** the columns name of continuous variable in the dataset. In"
+" our study, we default it to “X_1, X_2 ‧‧‧‧‧‧X_n” but it can be flexible."
+msgstr "**cont_cols:** 训练数据中连续型变量的列名。在我们的研究中，我们默认为 “X_1, X_2 ‧‧‧‧‧‧X_n”，但它可以灵活设置。"
+
+#: ../../source/api/sidlm_api.rst:23 259427f4074a4c98b54046a7d9b80d98
+msgid ""
+"**cate_cols:** the columns name of categorical variable in the dataset. "
+"In our study, we default it to “C_1, C_2 ‧‧‧‧‧‧C_n” but it can be "
+"flexible."
+msgstr "**cate_cols:** 训练数据中类别型变量的列名。在我们的研究中，我们默认为 “C_1, C_2 ‧‧‧‧‧‧C_n”，但它可以灵活设置"
+
+#: ../../source/api/sidlm_api.rst:24 2724228ed3fe4230a9dd937a36620e42
+msgid ""
+"**target_cols:** the columns name of prediction in "
+"dataset.(default=‘Y’,flexible)"
+msgstr "**target_cols:** 训练数据中标签(Y)的列名,我们默认为“Y”，但它也可以灵活设置"
+
+#: ../../source/api/sidlm_api.rst:27 8e972b9ce3454b0d930d9ac699506cf9
+msgid "Hyperparameter configuration"
+msgstr "超参数配置"
+
+#: ../../source/api/sidlm_api.rst:30 7904ac782b10435f867bc0c0cc581846
+msgid "Dataloader"
+msgstr "数据加载器"
+
+#: ../../source/api/sidlm_api.rst:32 147cd00519194a47a940929067ba03d6
+msgid ""
+"**batch_size:** The number of data samples captured in one step training."
+" (default=64)"
+msgstr "**batch_size:** 单步训练中使用的数据样本数量。(默认=64)"
+
+#: ../../source/api/sidlm_api.rst:33 39e404a911b44a8aaf7c248721b7012f
+msgid ""
+"**num_workers:**  The number of process created when used dataloader. "
+"(default=4)"
+msgstr "**num_workers:** 使用数据加载器时创建的进程数量。(默认=4)"
+
+#: ../../source/api/sidlm_api.rst:36 1fd15545fb814a5c8c23f6cdabc9af52
+msgid "Model"
+msgstr "模型"
+
+#: ../../source/api/sidlm_api.rst:38 06664c5dcdcb4bb28f3a8496f804eab2
+msgid ""
+"**d_embed:** The number of dimensions used to represent each input "
+"feature in the embedding for categorical. (default=32)"
+msgstr "**d_embed:** 用于表示分类输入特征中每个特征的嵌入维数。(默认=32)"
+
+#: ../../source/api/sidlm_api.rst:39 e5c07e8ec9544b41b29dcfda66c3a59c
+msgid "**d_model:** The number of hidden layer nodes. (default=256)"
+msgstr "**d_model:** 每层隐含层节点的数量。(默认=256)"
+
+#: ../../source/api/sidlm_api.rst:40 c66f11603523454bbf6151904bc5c340
+msgid "**n_layers:** The number of hidden layer. (default=1)"
+msgstr "**n_layers**: 隐含层的数量。(默认=1)"
+
+#: ../../source/api/sidlm_api.rst:41 0bd4035285354beaa1c28d143e1e87d4
+msgid ""
+"**p_drop:** The percent of neurons are temporarily removed from the "
+"network during training. (default=0.3)"
+msgstr "**p_drop**: 在训练过程中，暂时从网络中移除的神经元的百分比。(默认=0.3)"
+
+#: ../../source/api/sidlm_api.rst:42 b23d089ec996480db651dd2079eb2c81
+msgid "**act_fn:** Activation function. (default=relu)"
+msgstr "**act_fn**: 激活函数。(默认='relu')"
+
+#: ../../source/api/sidlm_api.rst:45 0056fbdf43e44c2890800de8c2dfb289
+msgid ""
+"**loss:**  The dictionary configuring the loss function for model "
+"training."
+msgstr "**loss:**  设置损失函数"
+
+#: ../../source/api/sidlm_api.rst:44 cc40687fdcfe45339842135b5108301b
+msgid ""
+"**name:** Specifies the loss function. Can be \"mse\"(recommend) for Mean"
+" Squared Error or \"rel\" for Relative Error. If not specified or any "
+"other value,defaults to \"mse\". **a:** Used only with \"rel\" loss to "
+"adjust the scale of error. Multiplied with target values in error "
+"calculation. (No default) **b:** Used only with \"rel\" loss to provide a"
+" baseline for error. Added to a * targets in error calculation. (No "
+"default)"
+msgstr ""
+"**name:** 指定损失函数。可以是 \"mse\"代表均方误差（推荐使用），或者 \"rel\" "
+"代表相对误差。如果未指定或者指定了其他值，默认为 \"mse\"。 a： 只在 \"rel\" "
+"损失中使用，用于调整误差的规模。在计算误差时乘以目标值。b： 只在 \"rel\" 损失中使用，提供误差的基线。在计算误差时，加到 a * "
+"目标值上。（无默认值）"
+
+#: ../../source/api/sidlm_api.rst:47 3a788369c3df49329bef73e63a033798
+msgid "**lr:** Learning rate. (default=3e-4)"
+msgstr "**lr**: 学习率。(默认=3e-4)"
+
+#: ../../source/api/sidlm_api.rst:48 967f8584b3dc4db1b93de1e299e3e8a1
+msgid ""
+"**weight_decay:** The value for penalizes large weights in the model "
+"during training to prevent overfitting. (default=1e-5)"
+msgstr "**weight_decay**: 在训练过程中对模型中大权重的惩罚值，以防止过拟合。(默认=1e-5)"
+
+#: ../../source/api/sidlm_api.rst:51 064203450874484b9b020f41c16b7e45
+msgid "Model_Callback"
+msgstr "模型回调"
+
+#: ../../source/api/sidlm_api.rst:53 2f13858304bb48a996d523ca069ab308
+msgid ""
+"**save_top_k:** Specifies the number of best models to keep based on a "
+"given metric during training on validation accuracy. (default=1, save the"
+" best)"
+msgstr "**save_top_k**: 在训练过程中，保留的最优模型数量。(默认=1, 保存最好的)"
+
+#: ../../source/api/sidlm_api.rst:54 502581e8547a491db4b14e3e2341a312
+msgid ""
+"**monitor:** Specifies the metric to monitor during training. "
+"(default=valid_loss)"
+msgstr "**monitor**: 在训练过程中使用的评价指标。(默认=valid_loss)"
+
+#: ../../source/api/sidlm_api.rst:55 377303e1f36b4681bd0f83de422d119c
+msgid ""
+"**mode:** Specifies whether the monitored metric should be minimized "
+"(MAE) or maximized (R). (default=min)"
+msgstr "**mode**: 指定指标的度量是应最小(Loss，MAE)还是最大(R)。(默认=min)"
+
+#: ../../source/api/sidlm_api.rst:56 76aa85780aa342ca9db6e0bdf11318c9
+msgid ""
+"**verbose:** Determines whether to print information about the saving "
+"process to the console. (default=True)"
+msgstr "**verbose**: 是否将保存过程的信息打印到控制台。(默认=True)"
+
+#: ../../source/api/sidlm_api.rst:57 bf3e4c3d44c346d9aeaa807a89f6f612
+msgid ""
+"**patience:** Specifies the number of epochs to wait for improvement in "
+"the monitored metric before stopping training. (default=10)"
+msgstr "**patience**:  模型允许精度没有提升的训练轮数。(默认=10，即模型超过10轮没有进步，自动停止)"
+
+#: ../../source/api/sidlm_api.rst:60 7575f56bb4b24a30a4845b5784e7ad0b
+msgid "Trainer"
+msgstr "训练器"
+
+#: ../../source/api/sidlm_api.rst:62 ce47c873220a46bca87054a7be294265
+msgid ""
+"**max_epochs:** Specifies the maximum number of epochs to train for. "
+"(default=5)"
+msgstr "**max_epochs**: 训练的最大轮数。(默认=5)"
+
+#: ../../source/api/sidlm_api.rst:63 caa806294eb2493a9451f4d88f6ee894
+msgid ""
+"**accelerator:** Specifies the hardware accelerator to use during "
+"training. (default=\"gpu\")"
+msgstr "**accelerator**: 训练期间使用的硬件设备。(默认=\"gpu\")"
+
+#: ../../source/api/sidlm_api.rst:64 464f5072aeba4daa9383bc808c645994
+msgid ""
+"**devices:** Specifies the number of devices to use during training. "
+"(default=1)"
+msgstr "**devices**: 训练期间使用的设备数量。(默认=1)"
+
+#: ../../source/api/sidlm_api.rst:65 fd28bc3a67b54c35a94b22a71c5868e9
+msgid ""
+"**deterministic:** Ensures reproducibility of the training results. "
+"(default=True)"
+msgstr "**deterministic**: 确保训练结果的可复现性。(默认=True)"
+

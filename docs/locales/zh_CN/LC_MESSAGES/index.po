@@ -21,7 +21,7 @@ msgstr ""
 
 #: 7d3988b3c7df4ee791f91c17d6a9fe53
 msgid "bnulogo"
-msgstr ""
+msgstr "bnulogo"
 
 #: ../../source/index.rst:17 19fbaf2f2f644ac78ceb971f632ed93a
 msgid "ESIDLM: Enhanced Spatial-Temporal Interpretable Deep Learning Model"
@@ -46,4 +46,3 @@ msgstr "探索完整的API接口文档"
 #: ../../source/index.rst:100 5cd2bd6b53d34e328129aa09225666b5
 msgid "Discover research papers and other resources related to ESDLM"
 msgstr "已使用ESIDLM库出版的论文和产品"
-
