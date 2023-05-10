@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/api/index.rst:3 a709c7e0443341ccaa4fae606d542092
 msgid "API reference"
-msgstr ""
+msgstr "接口参考"
 
 #: ../../source/api/index.rst:5 53e2b8e4e22843b0975c2c31353bdf12
 msgid ""
