@@ -19,9 +19,17 @@ Data
 - **test_data:** the file path of your test data. (default=’ ../data/sopinet/test.csv’)
 - **cont_cols:** the columns name of continuous variable in the train data. In our study, we default it to “X_1, X_2 ‧‧‧‧‧‧X_n” but it can be flexible. 
 - **cate_cols:** the columns name of categorical variable in the train data. In our study, we default it to “C_1, C_2 ‧‧‧‧‧‧C_n” but it can be flexible. 
-- **time_cols:** the columns of time series variable in the train data. Compare to cont_cols, we processed them into transformer frame. Noticed that each different time period in the time series needs to be in the list independently. For example, If you have three days of time series data of meteorological data (RH,WS,PS).
+- **time_cols:** the columns of time series variable in the train data. Compare to cont_cols, we processed them into transformer frame. Noticed that each different time period in the time series needs to be in the list independently. For example, If you have three days of time series data of meteorological data (RH,WS,PS).The time_cols should be the format as follow:
+  
+.. code-block:: bash
+
+      time_cols = {[RH_1, WS_1, PS_1],
+                  [RH_2, WS_2, PS_2],
+                  [RH_3, WS_3, PS_3],} 
+
 - **target_cols:** the columns name of prediction in train data. Due to the ability of simultaneous inversion, it should be set two predictions name. In our study, we default it to “Y_1, Y_2” but it also can be flexible.
-- **mask_cols:** the columns name of you want to masked in targets value. The masked value will not participate in the calculation of the loss function. In our study, we masked the in-situ measurement which are missing. Note that code used 0 or 1 to determine whether the value mask or not.(1 = keep, 0 = mask) and the order should be same with target_cols.
+- **mask_cols:** the columns name of you want to masked in targets value. The masked value will not participate in the calculation of the loss function. In our study, we masked the in-situ measurement which are missing. Note that code used 0 or 1 to determine whether the value mask or not.(1 = keep, 0 = mask) and the order should be same with target_cols. 
+  
 
 Hyperparameter configuration
 ----------------------------
