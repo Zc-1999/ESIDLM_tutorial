@@ -7,6 +7,6 @@ build:
     - echo "Running custom build commands" 
     - make html                            
 python:
-  version: 3.8
+  version: "3.8"
   install:
     - requirements: requirements.txt
