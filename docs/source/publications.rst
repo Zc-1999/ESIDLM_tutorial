@@ -25,5 +25,5 @@ Paper
 Product
 -------
 
-- `2000-2020 FAOD product <https://essd.copernicus.org/articles/14/1193/2022/>`_
-
+- `Global daily fine mode aerosol optical depth (fAOD) <https://essd.copernicus.org/articles/14/1193/2022/>`_
+- `Global daily coarse mode aerosol optical depth (cAOD) <https://pubs.acs.org/doi/10.1021/acs.est.3c07982>`_

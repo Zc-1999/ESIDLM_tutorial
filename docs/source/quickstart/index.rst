@@ -12,6 +12,7 @@ This guide will help you get started with three Deep Learning models.
    sopi_qs.rst
    sidlm_qs.rst
    entity_qs.rst
+   adlm_qs.rst
 
 .. important::
    We are currently constructing the document, please wait.

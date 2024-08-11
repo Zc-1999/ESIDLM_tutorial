@@ -12,6 +12,7 @@ methods. All classes and functions exposed in ``esidlm.*`` namespace are public.
    sopi_api.rst
    sidlm_api.rst
    entity_api.rst
+   adlm_api.rst
 
 .. important::
    We are currently constructing the document, please wait.

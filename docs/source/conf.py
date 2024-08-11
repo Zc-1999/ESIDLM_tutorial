@@ -8,7 +8,7 @@ sys.path.insert(0, os.path.abspath('D:/project_esidlm_tutorial/esidlm/learner/')
 # -- Project information -----------
 project = 'ESIDLM'
 copyright = f"{datetime.now().year}"
-author = 'BNU'
+author = 'BNU_ZUOCHEN'
 
 release = '0.1.0'
 
